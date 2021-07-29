@@ -39,7 +39,7 @@
 </head>
 <body class="font-sans font-base font-normal text-gray-dark">
 <nav class="bg-red">
-    <div class="max-w-7xl mx-auto">
+    <div class="max-w-6xl mx-auto">
         <div class="hidden sm:flex sm:justify-between">
             <a href="#" class="text-white opacity-100 transition hover:opacity-100 py-4 text-sm" aria-current="page">Главная</a>
             <a href="#" class="text-white opacity-70 transition hover:opacity-100 py-4 text-sm">О нас</a>
@@ -53,42 +53,44 @@
         </div>
     </div>
 </nav>
-<div class="mt-6 mb-5">
-    <div class="max-w-7xl mx-auto flex justify-between">
-        <div class="w-1/3">
-            <form action="#" class="flex relative w-2/3 overflow-hidden	mb-1.5">
+<div class="mt-7 mb-5">
+    <div class="max-w-6xl mx-auto flex justify-between">
+        <div class="w-1/4">
+            <form action="#" class="flex mb-3 relative">
                 <input type="search"
-                       class="w-full border-2 rounded-sm border-gray-400 border-solid	rounded-md pr-20 pl-2 focus:outline-none">
-                <button class="absolute top-0 right-0 h-full w-1/4 items-center text-xs	text-gray-900 bg-gray-400 rounded-md">
+                       class="w-full border rounded-sm border-gray py-2 px-3 text-sm leading-4 focus:outline-none focus:ring-2 focus:ring-gray focus:ring-opacity-30" placeholder="Поиск...">
+                <button class="text-center text-sm border border-gray bg-gray rounded py-2 px-3 leading-4 hover:bg-opacity-80 absolute right-0">
                     Найти
                 </button>
             </form>
 
-            <p class="mb-1.5 text-xl font-light	text-gray-900">Звонок по России бесплатный</p>
-            <a href="tel:88002003255" class="mb-1.5 flex text-red-700 text-2xl font-bold items-center"><span
-                    class="block mr-3.5 "><img src="img/icon-phone.svg" alt=""></span> 8 (800) 200 32 55</a>
-            <p class="text-xl font-light text-gray-900">Пн — Пт <span class="text-xl font-light	text-gray-900">10:00 — 20:00</span>
+            <p class="mb-3 text-xl font-light">Звонок по России бесплатный</p>
+            <a href="tel:88002003255" class="mb-3 flex text-red-700 text-2xl font-bold items-center">
+                <span class="block mr-3.5"><img src="img/icon-phone.svg" alt=""></span> 8 (800) 200 32 55</a>
+            <p class="text-xl font-light">Пн — Пт <span class="text-xl font-light">10:00 — 20:00</span>
             </p>
         </div>
-        <div class="w-1/3 flex justify-center">
-            <a href="/" class=""><img src="img/cerena-silver-logo.svg" alt="" class="object-contain w-full h-full"></a>
+        <div class="w-1/3">
+            <a href="/" class="">
+                <img src="img/cerena-silver-logo.svg" alt="" class="object-contain w-full h-full">
+            </a>
         </div>
         <div class="w-1/4 flex flex-col items-end">
-            <a href=""
-               class="flex items-center text-sm text-red-700 rounded-md	border-2 border-solid border-red-700 w-2/3 h-max px-5 py-2.5">
-                <span class="block mr-3"><img src="img/icon-like.svg" alt=""></span>
-                <span>Отложено  (<span>1000</span>)</span>
+            <a href="#"
+               class="flex items-center text-sm text-red rounded border border-red px-5 py-2 mb-3">
+                <img class="mr-3" src="img/icon-like.svg" alt="">
+                <span class="w-28">Отложено (<span>1000</span>)</span>
             </a>
-            <a href=""
-               class="flex items-center bg-red-700 text-sm text-white rounded-md border-2 border-solid border-red-700 w-2/3 mt-2.5 h-max px-5 py-2.5">
-                <span class="block mr-3"><img src="img/icon-basket.svg" alt=""></span>
-                <span>Корзина  (<span>2</span>)</span>
+            <a href="#"
+               class="flex items-center bg-red text-sm text-white rounded border border-red px-5 py-2">
+                <img class="mr-3" src="img/icon-basket.svg" alt="">
+                <span class="w-28">Корзина  (<span>2</span>)</span>
             </a>
         </div>
     </div>
 </div>
 <nav class="bg-white sticky top-0 bg-opacity-80">
-    <div class="max-w-7xl mx-auto">
+    <div class="max-w-6xl mx-auto">
         <div class="flex justify-between">
             <a href="#" class="text-lg uppercase py-4">Кольца</a>
             <a href="#" class="text-lg uppercase py-4">Серьги</a>
@@ -102,7 +104,7 @@
         </div>
     </div>
 </nav>
-<main class="max-w-7xl mx-auto">
+<main class="max-w-6xl mx-auto">
     <div class="w-full flex items-center mb-9">
         <a href="" class="text-red-700">Главная</a>
         <p class="mx-1 text-red-700">/</p>
@@ -114,7 +116,7 @@
         <p class="mb-7 text-sm font-light text-gray">(найдено <span>1479</span> украшений)</p>
     </div>
     <div class="flex">
-        <div class="w-3/4">
+        <div class="w-3/4 mr-8">
             <form action="#" class="flex items-center mb-12">
                 <p class="text-sm mr-5">Товаров на странице</p>
                 <select name="col" id=""
@@ -136,16 +138,20 @@
                 </select>
             </form>
 
-            <div class="grid grid-cols-3">
+            <div class="grid grid-cols-3 gap-8">
                 <div class="item-product">
-                    <div class="item-product__block-img"><img src="" alt=""></div>
-                    <a href="" class="item-product__like"></a>
-                    <p class="item-product__name">Кольцо «<span>Венок</span>»</p>
-                    <p class="item-product__description">с агатом, жемчугом и марказитами</p>
-                    <p class="item-product__price">2680 ₽</p>
+                    <a href="" class="like"></a>
+                    <img class="object-cover" src="/img/img-01.jpg" alt="Кольцо Венок" width="100%" height="210">
+                    <div class="mt-4 mb-8 mx-4">
+                        <p class="item-product__name">Кольцо «Венок»</p>
+                        <p class="item-product__description">с агатом, жемчугом и марказитами</p>
+                        <p class="item-product__price">2680 ₽</p>
+                    </div>
                 </div>
                 <div class="item-product">
-                    <div class="item-product__block-img"><img src="" alt=""></div>
+                    <div class="item-product__block-img">
+                        <img src="/img/img-02.jpg" alt="Кольцо Венок">
+                    </div>
                     <a href="" class="item-product__like"></a>
                     <p class="item-product__name">Кольцо «<span>Венок</span>»</p>
                     <p class="item-product__description">с агатом, жемчугом и марказитами</p>
@@ -210,12 +216,12 @@
     </div>
 </main>
 <footer>
-    <div class="max-w-7xl mx-auto">
+    <div class="max-w-6xl mx-auto">
         футер
     </div>
 </footer>
 <div>
-    <div class="max-w-7xl mx-auto">
+    <div class="max-w-6xl mx-auto">
         копирайт
     </div>
 </div>
