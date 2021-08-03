@@ -55,4 +55,10 @@
         @apply absolute top-4 right-4 w-6 h-6;
         background: url("icons/icon-like-border.svg") no-repeat 0 0/contain;
     }
+    input[type="checkbox"]:checked {
+        background-image: url("icons/icon-check.svg");
+        background-size: 8px 6px;
+        background-position: 50%;
+        background-repeat: no-repeat;
+    }
 }

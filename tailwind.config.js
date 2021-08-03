@@ -17,13 +17,20 @@ module.exports = {
           dark: '#333333',
           DEFAULT: '#C4C4C4',
           light: '#F2F2F2',
+        },
+        blue: {
+          DEFAULT: '#3B9AD3',
+          dark: '#5687B8',
         }
       },
     },
   },
 
   variants: {
-    extend: {},
+    extend: {
+      backgroundColor: ['checked'],
+      borderColor: ['checked'],
+    },
   },
 
   plugins: [],
