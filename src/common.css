@@ -55,6 +55,81 @@
         @apply absolute top-4 right-4 w-6 h-6;
         background: url("icons/icon-like-border.svg") no-repeat 0 0/contain;
     }
+    .like.active {
+        background: url("icons/icon-like.svg") no-repeat 0 0/contain;
+    }
+    .like-bottom {
+        @apply border-2 ml-auto;
+        background: url("icons/icon-like-border.svg") no-repeat center center/ 20px 22px;
+    }
+    .item-product:hover .block-hover {
+        @apply max-h-60 border-red pb-7;
+    }
+    .link-play {
+        @apply w-5 h-5;
+        background: url("icons/link-play.svg") no-repeat 0 0/contain;
+    }
+    .link-play.active {
+        @apply w-5 h-5;
+        background: url("icons/link-photo.svg") no-repeat 0 0/contain;
+    }
+    .pagination-str-img {
+        @apply h-12 rounded bg-gray-200 flex items-center justify-center px-5;
+    }
+    .pagination-str {
+        @apply rounded h-12 w-12 bg-transparent flex items-center justify-center hover:bg-gray-300 duration-300;
+    }
+    .pagination-str.active {
+        @apply bg-gray-200;
+    }
+    .font-light-text {
+        @apply leading-6 mb-7 font-light;
+    }
+    .font-light-text span {
+        @apply font-medium;
+    }
+    .item-block-footer {
+        @apply w-1/5;
+    }
+    .block-price {
+        @apply w-1/3;
+    }
+    .footer-title {
+        @apply mb-8 font-medium text-2xl;
+    }
+    .footer-link {
+        @apply w-max block mb-5 font-medium text-lg border-b-2 border-transparent duration-300;
+    }
+    .footer-link:hover {
+        @apply ml-2 text-red border-red;
+    }
+    .soc-link {
+        @apply block mr-5 rounded;
+    }
+    .vk {
+        @apply w-9 h-9;
+        background: url("icons/icon_vk.svg") no-repeat 0 0/contain;
+    }
+    .fb {
+        @apply w-9 h-9;
+        background: url("icons/icon_fb.svg") no-repeat 0 0/contain;
+    }
+    .inst {
+        @apply w-9 h-9;
+        background: url("icons/icon_instagram.svg") no-repeat 0 0/contain;
+    }
+    .ok {
+        @apply w-9 h-9;
+        background: url("icons/icon_ok.svg") no-repeat 0 0/contain;
+    }
+    .select-col {
+        @apply appearance-none;
+        background: url("icons/select-arrow.svg") no-repeat 88% center/15px 8px;
+    }
+    .select-sort {
+        @apply appearance-none;
+        background: url("icons/select-arrow.svg") no-repeat 95% center/15px 8px;
+    }
     input[type="checkbox"]:checked {
         background-image: url("icons/icon-check.svg");
         background-size: 8px 6px;

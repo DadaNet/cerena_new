@@ -120,8 +120,7 @@
         <div class="w-3/4 mr-8">
             <form action="#" class="flex items-center mb-12">
                 <p class="text-sm mr-5">Товаров на странице</p>
-                <select name="col" id=""
-                        class="text-sm bg-white rounded-md border-2 border-solid pl-2 pr-5 py-1 appearance-none ">
+                <select name="col" class="select-col text-sm bg-white rounded-md border-2 border-solid pl-2 pr-5 py-1 appearance-none ">
                     <option value="">15</option>
                     <option value="">30</option>
                     <option value="">48</option>
@@ -130,8 +129,7 @@
                 </select>
 
                 <p class="text-sm mr-5 ml-auto">Сортировать</p>
-                <select name="sort" id=""
-                        class="text-sm bg-white rounded-md border-2 border-solid pl-2 pr-5 py-1 appearance-none ">
+                <select name="sort" class="select-sort text-sm bg-white rounded-md border-2 border-solid pl-2 pr-5 py-1 appearance-none ">
                     <option value="">сначала скидки</option>
                     <option value="">сначала дорогие</option>
                     <option value="">сначала новинки</option>
@@ -140,51 +138,928 @@
             </form>
 
             <div class="grid grid-cols-3 gap-8">
-                <div class="item-product">
+                <div class="item-product pt-9">
+                    <div class="absolute top-3.5 left-2 flex w-9/12 text-red">
+                        <a href=""
+                           class="rounded border-2 border-red h-6 px-2 text-white bg-red text-xs flex items-center">35%</a>
+                        <a href=""
+                           class="rounded border-2 border-red h-6 px-2 text-xs flex items-center mx-3 ">Комплект</a>
+                        <a href="" class="rounded border-2 border-red h-6 px-2 text-xs flex items-center">Хит</a>
+                    </div>
                     <a href="" class="like"></a>
-                    <img class="object-cover" src="/img/img-01.jpg" alt="Кольцо Венок" width="100%" height="210">
+                    <div class="relative mt-1">
+                        <img class="object-cover" src="/img/img-01.jpg" alt="Кольцо Венок" width="100%" height="210">
+                        <a href="" class="link-play absolute bottom-4 right-4"></a>
+                    </div>
                     <div class="mt-4 mb-8 mx-4">
-                        <p class="item-product__name">Кольцо «Венок»</p>
-                        <p class="item-product__description">с агатом, жемчугом и марказитами</p>
-                        <p class="item-product__price">2680 ₽</p>
+                        <p class="item-product__name text-xl mt-3.5">Кольцо «Венок»</p>
+                        <p class="item-product__description text-sm	mt-1.5 px-2">с агатом, жемчугом и марказитами</p>
+                        <div class="mt-3.5 flex items-center justify-around">
+                            <p class="item-product__price text-xl font-medium text-red">2680 ₽</p>
+                            <p class="item-product__price ttext-base text-gray line-through hidden">3500 ₽</p>
+                        </div>
+                    </div>
+                    <div class="text-left flex flex-wrap max-h-0 overflow-hidden block-hover duration-300 border-b-4 border-transparent">
+                        <p class="text-xs font-light ml-5 mb-1.5 w-full">Артикул: <span>0000000000000000</span></p>
+                        <p class="text-xs font-light ml-5 mb-1 w-full">Серебро <span class="text-xs font-medium">925 пробы</span>
+                        </p>
+                        <p class="mb-3 w-full ml-5">Размеры:</p>
+
+                        <div class="flex flex-wrap flex-row w-full mb-3.5 mx-4">
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                        </div>
+
+                        <a href=""
+                           class="flex items-center justify-center bg-red w-3/5 h-9 rounded text-white ml-5"><img
+                                src="/img/icon-basket.svg" alt="" class="block mr-2.5">Купить</a>
+                        <a href="" class="like-bottom block h-9 w-9 border-2 rounded mr-7"></a>
                     </div>
                 </div>
-                <div class="item-product">
-                    <div class="item-product__block-img">
-                        <img src="/img/img-02.jpg" alt="Кольцо Венок">
+                <div class="item-product pt-9">
+                    <div class="absolute top-3.5 left-2 flex w-9/12 text-red">
+                        <a href=""
+                           class="rounded border-2 border-red h-6 px-2 text-white bg-red text-xs flex items-center">35%</a>
+                        <a href=""
+                           class="rounded border-2 border-red h-6 px-2 text-xs flex items-center mx-3 ">Комплект</a>
+                        <a href="" class="rounded border-2 border-red h-6 px-2 text-xs flex items-center">Хит</a>
                     </div>
-                    <a href="" class="item-product__like"></a>
-                    <p class="item-product__name">Кольцо «<span>Венок</span>»</p>
-                    <p class="item-product__description">с агатом, жемчугом и марказитами</p>
-                    <p class="item-product__price">2680 ₽</p>
+                    <a href="" class="like"></a>
+                    <div class="relative mt-1">
+                        <img class="object-cover" src="/img/img-01.jpg" alt="Кольцо Венок" width="100%" height="210">
+                        <a href="" class="link-play absolute bottom-4 right-4"></a>
+                    </div>
+                    <div class="mt-4 mb-8 mx-4">
+                        <p class="item-product__name text-xl mt-3.5">Кольцо «Венок»</p>
+                        <p class="item-product__description text-sm	mt-1.5 px-2">с агатом, жемчугом и марказитами</p>
+                        <div class="mt-3.5 flex items-center justify-around">
+                            <p class="item-product__price text-xl font-medium text-red">2680 ₽</p>
+                            <p class="item-product__price ttext-base text-gray line-through hidden">3500 ₽</p>
+                        </div>
+                    </div>
+                    <div class="text-left flex flex-wrap max-h-0 overflow-hidden block-hover duration-300 border-b-4 border-transparent">
+                        <p class="text-xs font-light ml-5 mb-1.5 w-full">Артикул: <span>0000000000000000</span></p>
+                        <p class="text-xs font-light ml-5 mb-1 w-full">Серебро <span class="text-xs font-medium">925 пробы</span>
+                        </p>
+                        <p class="mb-3 w-full ml-5">Размеры:</p>
+
+                        <div class="flex flex-wrap flex-row w-full mb-3.5 mx-4">
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                        </div>
+
+                        <a href=""
+                           class="flex items-center justify-center bg-red w-3/5 h-9 rounded text-white ml-5"><img
+                                src="/img/icon-basket.svg" alt="" class="block mr-2.5">Купить</a>
+                        <a href="" class="like-bottom block h-9 w-9 border-2 rounded mr-7"></a>
+                    </div>
                 </div>
-                <div class="item-product">
-                    <div class="item-product__block-img"><img src="" alt=""></div>
-                    <a href="" class="item-product__like"></a>
-                    <p class="item-product__name">Кольцо «<span>Венок</span>»</p>
-                    <p class="item-product__description">с агатом, жемчугом и марказитами</p>
-                    <p class="item-product__price">2680 ₽</p>
+                <div class="item-product pt-9">
+                    <div class="absolute top-3.5 left-2 flex w-9/12 text-red">
+                        <a href=""
+                           class="rounded border-2 border-red h-6 px-2 text-white bg-red text-xs flex items-center">35%</a>
+                        <a href=""
+                           class="rounded border-2 border-red h-6 px-2 text-xs flex items-center mx-3 ">Комплект</a>
+                        <a href="" class="rounded border-2 border-red h-6 px-2 text-xs flex items-center">Хит</a>
+                    </div>
+                    <a href="" class="like"></a>
+                    <div class="relative mt-1">
+                        <img class="object-cover" src="/img/img-01.jpg" alt="Кольцо Венок" width="100%" height="210">
+                        <a href="" class="link-play absolute bottom-4 right-4"></a>
+                    </div>
+                    <div class="mt-4 mb-8 mx-4">
+                        <p class="item-product__name text-xl mt-3.5">Кольцо «Венок»</p>
+                        <p class="item-product__description text-sm	mt-1.5 px-2">с агатом, жемчугом и марказитами</p>
+                        <div class="mt-3.5 flex items-center justify-around">
+                            <p class="item-product__price text-xl font-medium text-red">2680 ₽</p>
+                            <p class="item-product__price ttext-base text-gray line-through hidden">3500 ₽</p>
+                        </div>
+                    </div>
+                    <div class="text-left flex flex-wrap max-h-0 overflow-hidden block-hover duration-300 border-b-4 border-transparent">
+                        <p class="text-xs font-light ml-5 mb-1.5 w-full">Артикул: <span>0000000000000000</span></p>
+                        <p class="text-xs font-light ml-5 mb-1 w-full">Серебро <span class="text-xs font-medium">925 пробы</span>
+                        </p>
+                        <p class="mb-3 w-full ml-5">Размеры:</p>
+
+                        <div class="flex flex-wrap flex-row w-full mb-3.5 mx-4">
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                        </div>
+
+                        <a href=""
+                           class="flex items-center justify-center bg-red w-3/5 h-9 rounded text-white ml-5"><img
+                                src="/img/icon-basket.svg" alt="" class="block mr-2.5">Купить</a>
+                        <a href="" class="like-bottom block h-9 w-9 border-2 rounded mr-7"></a>
+                    </div>
                 </div>
-                <div class="item-product">
-                    <div class="item-product__block-img"><img src="" alt=""></div>
-                    <a href="" class="item-product__like"></a>
-                    <p class="item-product__name">Кольцо «<span>Венок</span>»</p>
-                    <p class="item-product__description">с агатом, жемчугом и марказитами</p>
-                    <p class="item-product__price">2680 ₽</p>
+                <div class="item-product pt-9">
+                    <div class="absolute top-3.5 left-2 flex w-9/12 text-red">
+                        <a href=""
+                           class="rounded border-2 border-red h-6 px-2 text-white bg-red text-xs flex items-center">35%</a>
+                        <a href=""
+                           class="rounded border-2 border-red h-6 px-2 text-xs flex items-center mx-3 ">Комплект</a>
+                        <a href="" class="rounded border-2 border-red h-6 px-2 text-xs flex items-center">Хит</a>
+                    </div>
+                    <a href="" class="like"></a>
+                    <div class="relative mt-1">
+                        <img class="object-cover" src="/img/img-01.jpg" alt="Кольцо Венок" width="100%" height="210">
+                        <a href="" class="link-play absolute bottom-4 right-4"></a>
+                    </div>
+                    <div class="mt-4 mb-8 mx-4">
+                        <p class="item-product__name text-xl mt-3.5">Кольцо «Венок»</p>
+                        <p class="item-product__description text-sm	mt-1.5 px-2">с агатом, жемчугом и марказитами</p>
+                        <div class="mt-3.5 flex items-center justify-around">
+                            <p class="item-product__price text-xl font-medium text-red">2680 ₽</p>
+                            <p class="item-product__price ttext-base text-gray line-through hidden">3500 ₽</p>
+                        </div>
+                    </div>
+                    <div class="text-left flex flex-wrap max-h-0 overflow-hidden block-hover duration-300 border-b-4 border-transparent">
+                        <p class="text-xs font-light ml-5 mb-1.5 w-full">Артикул: <span>0000000000000000</span></p>
+                        <p class="text-xs font-light ml-5 mb-1 w-full">Серебро <span class="text-xs font-medium">925 пробы</span>
+                        </p>
+                        <p class="mb-3 w-full ml-5">Размеры:</p>
+
+                        <div class="flex flex-wrap flex-row w-full mb-3.5 mx-4">
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                        </div>
+
+                        <a href=""
+                           class="flex items-center justify-center bg-red w-3/5 h-9 rounded text-white ml-5"><img
+                                src="/img/icon-basket.svg" alt="" class="block mr-2.5">Купить</a>
+                        <a href="" class="like-bottom block h-9 w-9 border-2 rounded mr-7"></a>
+                    </div>
                 </div>
-                <div class="item-product">
-                    <div class="item-product__block-img"><img src="" alt=""></div>
-                    <a href="" class="item-product__like"></a>
-                    <p class="item-product__name">Кольцо «<span>Венок</span>»</p>
-                    <p class="item-product__description">с агатом, жемчугом и марказитами</p>
-                    <p class="item-product__price">2680 ₽</p>
+                <div class="item-product pt-9">
+                    <div class="absolute top-3.5 left-2 flex w-9/12 text-red">
+                        <a href=""
+                           class="rounded border-2 border-red h-6 px-2 text-white bg-red text-xs flex items-center">35%</a>
+                        <a href=""
+                           class="rounded border-2 border-red h-6 px-2 text-xs flex items-center mx-3 ">Комплект</a>
+                        <a href="" class="rounded border-2 border-red h-6 px-2 text-xs flex items-center">Хит</a>
+                    </div>
+                    <a href="" class="like"></a>
+                    <div class="relative mt-1">
+                        <img class="object-cover" src="/img/img-01.jpg" alt="Кольцо Венок" width="100%" height="210">
+                        <a href="" class="link-play absolute bottom-4 right-4"></a>
+                    </div>
+                    <div class="mt-4 mb-8 mx-4">
+                        <p class="item-product__name text-xl mt-3.5">Кольцо «Венок»</p>
+                        <p class="item-product__description text-sm	mt-1.5 px-2">с агатом, жемчугом и марказитами</p>
+                        <div class="mt-3.5 flex items-center justify-around">
+                            <p class="item-product__price text-xl font-medium text-red">2680 ₽</p>
+                            <p class="item-product__price ttext-base text-gray line-through hidden">3500 ₽</p>
+                        </div>
+                    </div>
+                    <div class="text-left flex flex-wrap max-h-0 overflow-hidden block-hover duration-300 border-b-4 border-transparent">
+                        <p class="text-xs font-light ml-5 mb-1.5 w-full">Артикул: <span>0000000000000000</span></p>
+                        <p class="text-xs font-light ml-5 mb-1 w-full">Серебро <span class="text-xs font-medium">925 пробы</span>
+                        </p>
+                        <p class="mb-3 w-full ml-5">Размеры:</p>
+
+                        <div class="flex flex-wrap flex-row w-full mb-3.5 mx-4">
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                        </div>
+
+                        <a href=""
+                           class="flex items-center justify-center bg-red w-3/5 h-9 rounded text-white ml-5"><img
+                                src="/img/icon-basket.svg" alt="" class="block mr-2.5">Купить</a>
+                        <a href="" class="like-bottom block h-9 w-9 border-2 rounded mr-7"></a>
+                    </div>
                 </div>
-                <div class="item-product">
-                    <div class="item-product__block-img"><img src="" alt=""></div>
-                    <a href="" class="item-product__like"></a>
-                    <p class="item-product__name">Кольцо «<span>Венок</span>»</p>
-                    <p class="item-product__description">с агатом, жемчугом и марказитами</p>
-                    <p class="item-product__price">2680 ₽</p>
+                <div class="item-product pt-9">
+                    <div class="absolute top-3.5 left-2 flex w-9/12 text-red">
+                        <a href=""
+                           class="rounded border-2 border-red h-6 px-2 text-white bg-red text-xs flex items-center">35%</a>
+                        <a href=""
+                           class="rounded border-2 border-red h-6 px-2 text-xs flex items-center mx-3 ">Комплект</a>
+                        <a href="" class="rounded border-2 border-red h-6 px-2 text-xs flex items-center">Хит</a>
+                    </div>
+                    <a href="" class="like"></a>
+                    <div class="relative mt-1">
+                        <img class="object-cover" src="/img/img-01.jpg" alt="Кольцо Венок" width="100%" height="210">
+                        <a href="" class="link-play absolute bottom-4 right-4"></a>
+                    </div>
+                    <div class="mt-4 mb-8 mx-4">
+                        <p class="item-product__name text-xl mt-3.5">Кольцо «Венок»</p>
+                        <p class="item-product__description text-sm	mt-1.5 px-2">с агатом, жемчугом и марказитами</p>
+                        <div class="mt-3.5 flex items-center justify-around">
+                            <p class="item-product__price text-xl font-medium text-red">2680 ₽</p>
+                            <p class="item-product__price ttext-base text-gray line-through hidden">3500 ₽</p>
+                        </div>
+                    </div>
+                    <div class="text-left flex flex-wrap max-h-0 overflow-hidden block-hover duration-300 border-b-4 border-transparent">
+                        <p class="text-xs font-light ml-5 mb-1.5 w-full">Артикул: <span>0000000000000000</span></p>
+                        <p class="text-xs font-light ml-5 mb-1 w-full">Серебро <span class="text-xs font-medium">925 пробы</span>
+                        </p>
+                        <p class="mb-3 w-full ml-5">Размеры:</p>
+
+                        <div class="flex flex-wrap flex-row w-full mb-3.5 mx-4">
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                        </div>
+
+                        <a href=""
+                           class="flex items-center justify-center bg-red w-3/5 h-9 rounded text-white ml-5"><img
+                                src="/img/icon-basket.svg" alt="" class="block mr-2.5">Купить</a>
+                        <a href="" class="like-bottom block h-9 w-9 border-2 rounded mr-7"></a>
+                    </div>
+                </div>
+                <div class="item-product pt-9">
+                    <div class="absolute top-3.5 left-2 flex w-9/12 text-red">
+                        <a href=""
+                           class="rounded border-2 border-red h-6 px-2 text-white bg-red text-xs flex items-center">35%</a>
+                        <a href=""
+                           class="rounded border-2 border-red h-6 px-2 text-xs flex items-center mx-3 ">Комплект</a>
+                        <a href="" class="rounded border-2 border-red h-6 px-2 text-xs flex items-center">Хит</a>
+                    </div>
+                    <a href="" class="like"></a>
+                    <div class="relative mt-1">
+                        <img class="object-cover" src="/img/img-01.jpg" alt="Кольцо Венок" width="100%" height="210">
+                        <a href="" class="link-play absolute bottom-4 right-4"></a>
+                    </div>
+                    <div class="mt-4 mb-8 mx-4">
+                        <p class="item-product__name text-xl mt-3.5">Кольцо «Венок»</p>
+                        <p class="item-product__description text-sm	mt-1.5 px-2">с агатом, жемчугом и марказитами</p>
+                        <div class="mt-3.5 flex items-center justify-around">
+                            <p class="item-product__price text-xl font-medium text-red">2680 ₽</p>
+                            <p class="item-product__price ttext-base text-gray line-through hidden">3500 ₽</p>
+                        </div>
+                    </div>
+                    <div class="text-left flex flex-wrap max-h-0 overflow-hidden block-hover duration-300 border-b-4 border-transparent">
+                        <p class="text-xs font-light ml-5 mb-1.5 w-full">Артикул: <span>0000000000000000</span></p>
+                        <p class="text-xs font-light ml-5 mb-1 w-full">Серебро <span class="text-xs font-medium">925 пробы</span>
+                        </p>
+                        <p class="mb-3 w-full ml-5">Размеры:</p>
+
+                        <div class="flex flex-wrap flex-row w-full mb-3.5 mx-4">
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                        </div>
+
+                        <a href=""
+                           class="flex items-center justify-center bg-red w-3/5 h-9 rounded text-white ml-5"><img
+                                src="/img/icon-basket.svg" alt="" class="block mr-2.5">Купить</a>
+                        <a href="" class="like-bottom block h-9 w-9 border-2 rounded mr-7"></a>
+                    </div>
+                </div>
+                <div class="item-product pt-9">
+                    <div class="absolute top-3.5 left-2 flex w-9/12 text-red">
+                        <a href=""
+                           class="rounded border-2 border-red h-6 px-2 text-white bg-red text-xs flex items-center">35%</a>
+                        <a href=""
+                           class="rounded border-2 border-red h-6 px-2 text-xs flex items-center mx-3 ">Комплект</a>
+                        <a href="" class="rounded border-2 border-red h-6 px-2 text-xs flex items-center">Хит</a>
+                    </div>
+                    <a href="" class="like"></a>
+                    <div class="relative mt-1">
+                        <img class="object-cover" src="/img/img-01.jpg" alt="Кольцо Венок" width="100%" height="210">
+                        <a href="" class="link-play absolute bottom-4 right-4"></a>
+                    </div>
+                    <div class="mt-4 mb-8 mx-4">
+                        <p class="item-product__name text-xl mt-3.5">Кольцо «Венок»</p>
+                        <p class="item-product__description text-sm	mt-1.5 px-2">с агатом, жемчугом и марказитами</p>
+                        <div class="mt-3.5 flex items-center justify-around">
+                            <p class="item-product__price text-xl font-medium text-red">2680 ₽</p>
+                            <p class="item-product__price ttext-base text-gray line-through hidden">3500 ₽</p>
+                        </div>
+                    </div>
+                    <div class="text-left flex flex-wrap max-h-0 overflow-hidden block-hover duration-300 border-b-4 border-transparent">
+                        <p class="text-xs font-light ml-5 mb-1.5 w-full">Артикул: <span>0000000000000000</span></p>
+                        <p class="text-xs font-light ml-5 mb-1 w-full">Серебро <span class="text-xs font-medium">925 пробы</span>
+                        </p>
+                        <p class="mb-3 w-full ml-5">Размеры:</p>
+
+                        <div class="flex flex-wrap flex-row w-full mb-3.5 mx-4">
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                        </div>
+
+                        <a href=""
+                           class="flex items-center justify-center bg-red w-3/5 h-9 rounded text-white ml-5"><img
+                                src="/img/icon-basket.svg" alt="" class="block mr-2.5">Купить</a>
+                        <a href="" class="like-bottom block h-9 w-9 border-2 rounded mr-7"></a>
+                    </div>
+                </div>
+                <div class="item-product pt-9">
+                    <div class="absolute top-3.5 left-2 flex w-9/12 text-red">
+                        <a href=""
+                           class="rounded border-2 border-red h-6 px-2 text-white bg-red text-xs flex items-center">35%</a>
+                        <a href=""
+                           class="rounded border-2 border-red h-6 px-2 text-xs flex items-center mx-3 ">Комплект</a>
+                        <a href="" class="rounded border-2 border-red h-6 px-2 text-xs flex items-center">Хит</a>
+                    </div>
+                    <a href="" class="like"></a>
+                    <div class="relative mt-1">
+                        <img class="object-cover" src="/img/img-01.jpg" alt="Кольцо Венок" width="100%" height="210">
+                        <a href="" class="link-play absolute bottom-4 right-4"></a>
+                    </div>
+                    <div class="mt-4 mb-8 mx-4">
+                        <p class="item-product__name text-xl mt-3.5">Кольцо «Венок»</p>
+                        <p class="item-product__description text-sm	mt-1.5 px-2">с агатом, жемчугом и марказитами</p>
+                        <div class="mt-3.5 flex items-center justify-around">
+                            <p class="item-product__price text-xl font-medium text-red">2680 ₽</p>
+                            <p class="item-product__price ttext-base text-gray line-through hidden">3500 ₽</p>
+                        </div>
+                    </div>
+                    <div class="text-left flex flex-wrap max-h-0 overflow-hidden block-hover duration-300 border-b-4 border-transparent">
+                        <p class="text-xs font-light ml-5 mb-1.5 w-full">Артикул: <span>0000000000000000</span></p>
+                        <p class="text-xs font-light ml-5 mb-1 w-full">Серебро <span class="text-xs font-medium">925 пробы</span>
+                        </p>
+                        <p class="mb-3 w-full ml-5">Размеры:</p>
+
+                        <div class="flex flex-wrap flex-row w-full mb-3.5 mx-4">
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                        </div>
+
+                        <a href=""
+                           class="flex items-center justify-center bg-red w-3/5 h-9 rounded text-white ml-5"><img
+                                src="/img/icon-basket.svg" alt="" class="block mr-2.5">Купить</a>
+                        <a href="" class="like-bottom block h-9 w-9 border-2 rounded mr-7"></a>
+                    </div>
+                </div>
+                <div class="item-product pt-9">
+                    <div class="absolute top-3.5 left-2 flex w-9/12 text-red">
+                        <a href=""
+                           class="rounded border-2 border-red h-6 px-2 text-white bg-red text-xs flex items-center">35%</a>
+                        <a href=""
+                           class="rounded border-2 border-red h-6 px-2 text-xs flex items-center mx-3 ">Комплект</a>
+                        <a href="" class="rounded border-2 border-red h-6 px-2 text-xs flex items-center">Хит</a>
+                    </div>
+                    <a href="" class="like"></a>
+                    <div class="relative mt-1">
+                        <img class="object-cover" src="/img/img-01.jpg" alt="Кольцо Венок" width="100%" height="210">
+                        <a href="" class="link-play absolute bottom-4 right-4"></a>
+                    </div>
+                    <div class="mt-4 mb-8 mx-4">
+                        <p class="item-product__name text-xl mt-3.5">Кольцо «Венок»</p>
+                        <p class="item-product__description text-sm	mt-1.5 px-2">с агатом, жемчугом и марказитами</p>
+                        <div class="mt-3.5 flex items-center justify-around">
+                            <p class="item-product__price text-xl font-medium text-red">2680 ₽</p>
+                            <p class="item-product__price ttext-base text-gray line-through hidden">3500 ₽</p>
+                        </div>
+                    </div>
+                    <div class="text-left flex flex-wrap max-h-0 overflow-hidden block-hover duration-300 border-b-4 border-transparent">
+                        <p class="text-xs font-light ml-5 mb-1.5 w-full">Артикул: <span>0000000000000000</span></p>
+                        <p class="text-xs font-light ml-5 mb-1 w-full">Серебро <span class="text-xs font-medium">925 пробы</span>
+                        </p>
+                        <p class="mb-3 w-full ml-5">Размеры:</p>
+
+                        <div class="flex flex-wrap flex-row w-full mb-3.5 mx-4">
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                        </div>
+
+                        <a href=""
+                           class="flex items-center justify-center bg-red w-3/5 h-9 rounded text-white ml-5"><img
+                                src="/img/icon-basket.svg" alt="" class="block mr-2.5">Купить</a>
+                        <a href="" class="like-bottom block h-9 w-9 border-2 rounded mr-7"></a>
+                    </div>
+                </div>
+                <div class="item-product pt-9">
+                    <div class="absolute top-3.5 left-2 flex w-9/12 text-red">
+                        <a href=""
+                           class="rounded border-2 border-red h-6 px-2 text-white bg-red text-xs flex items-center">35%</a>
+                        <a href=""
+                           class="rounded border-2 border-red h-6 px-2 text-xs flex items-center mx-3 ">Комплект</a>
+                        <a href="" class="rounded border-2 border-red h-6 px-2 text-xs flex items-center">Хит</a>
+                    </div>
+                    <a href="" class="like"></a>
+                    <div class="relative mt-1">
+                        <img class="object-cover" src="/img/img-01.jpg" alt="Кольцо Венок" width="100%" height="210">
+                        <a href="" class="link-play absolute bottom-4 right-4"></a>
+                    </div>
+                    <div class="mt-4 mb-8 mx-4">
+                        <p class="item-product__name text-xl mt-3.5">Кольцо «Венок»</p>
+                        <p class="item-product__description text-sm	mt-1.5 px-2">с агатом, жемчугом и марказитами</p>
+                        <div class="mt-3.5 flex items-center justify-around">
+                            <p class="item-product__price text-xl font-medium text-red">2680 ₽</p>
+                            <p class="item-product__price ttext-base text-gray line-through hidden">3500 ₽</p>
+                        </div>
+                    </div>
+                    <div class="text-left flex flex-wrap max-h-0 overflow-hidden block-hover duration-300 border-b-4 border-transparent">
+                        <p class="text-xs font-light ml-5 mb-1.5 w-full">Артикул: <span>0000000000000000</span></p>
+                        <p class="text-xs font-light ml-5 mb-1 w-full">Серебро <span class="text-xs font-medium">925 пробы</span>
+                        </p>
+                        <p class="mb-3 w-full ml-5">Размеры:</p>
+
+                        <div class="flex flex-wrap flex-row w-full mb-3.5 mx-4">
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                        </div>
+
+                        <a href=""
+                           class="flex items-center justify-center bg-red w-3/5 h-9 rounded text-white ml-5"><img
+                                src="/img/icon-basket.svg" alt="" class="block mr-2.5">Купить</a>
+                        <a href="" class="like-bottom block h-9 w-9 border-2 rounded mr-7"></a>
+                    </div>
+                </div>
+                <div class="item-product pt-9">
+                    <div class="absolute top-3.5 left-2 flex w-9/12 text-red">
+                        <a href=""
+                           class="rounded border-2 border-red h-6 px-2 text-white bg-red text-xs flex items-center">35%</a>
+                        <a href=""
+                           class="rounded border-2 border-red h-6 px-2 text-xs flex items-center mx-3 ">Комплект</a>
+                        <a href="" class="rounded border-2 border-red h-6 px-2 text-xs flex items-center">Хит</a>
+                    </div>
+                    <a href="" class="like"></a>
+                    <div class="relative mt-1">
+                        <img class="object-cover" src="/img/img-01.jpg" alt="Кольцо Венок" width="100%" height="210">
+                        <a href="" class="link-play absolute bottom-4 right-4"></a>
+                    </div>
+                    <div class="mt-4 mb-8 mx-4">
+                        <p class="item-product__name text-xl mt-3.5">Кольцо «Венок»</p>
+                        <p class="item-product__description text-sm	mt-1.5 px-2">с агатом, жемчугом и марказитами</p>
+                        <div class="mt-3.5 flex items-center justify-around">
+                            <p class="item-product__price text-xl font-medium text-red">2680 ₽</p>
+                            <p class="item-product__price ttext-base text-gray line-through hidden">3500 ₽</p>
+                        </div>
+                    </div>
+                    <div class="text-left flex flex-wrap max-h-0 overflow-hidden block-hover duration-300 border-b-4 border-transparent">
+                        <p class="text-xs font-light ml-5 mb-1.5 w-full">Артикул: <span>0000000000000000</span></p>
+                        <p class="text-xs font-light ml-5 mb-1 w-full">Серебро <span class="text-xs font-medium">925 пробы</span>
+                        </p>
+                        <p class="mb-3 w-full ml-5">Размеры:</p>
+
+                        <div class="flex flex-wrap flex-row w-full mb-3.5 mx-4">
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                            <label class="w-8 h-4 relative block mx-1.5 mb-1.5">
+                                <input type="checkbox" class="check absolute top-0 left-0 w-0 h-0">
+                                <span class="w-full h-full flex items-center justify-center bg-gray-300 text-white text-xs font-light">14.5</span>
+                            </label>
+                        </div>
+
+                        <a href=""
+                           class="flex items-center justify-center bg-red w-3/5 h-9 rounded text-white ml-5"><img
+                                src="/img/icon-basket.svg" alt="" class="block mr-2.5">Купить</a>
+                        <a href="" class="like-bottom block h-9 w-9 border-2 rounded mr-7"></a>
+                    </div>
+                </div>
+                <div class="pagination flex items-center justify-center my-9">
+                    <a href="" class="pagination-str-img flex mr-2"><img src="/img/arrow-prev.svg" alt="arrow-prev"
+                                                                         class="mr-2">Назад</a>
+                    <a href="" class="pagination-str active">1</a>
+                    <a href="" class="pagination-str">2</a>
+                    <a href="" class="pagination-str">3</a>
+                    <a href="" class="pagination-str">4</a>
+                    <a href="" class="pagination-str">5</a>
+                    <a href="" class="pagination-str-img flex ml-2">Вперед<img src="/img/arrow-next.svg" alt="arrow-next"
+                                                                               class="ml-2"></a>
                 </div>
             </div>
             <div class="font-light">
@@ -334,14 +1209,64 @@
         </aside>
     </div>
 </main>
-<footer>
-    <div class="max-w-6xl mx-auto">
-        футер
+<footer class="bg-gray-400 py-12">
+    <div class="max-w-6xl mx-auto flex justify-between text-white">
+        <div class="item-block-footer">
+            <p class="footer-title">Серена-Сильвер</p>
+            <a href="" class="footer-link">Главная</a>
+            <a href="" class="footer-link">О нас</a>
+            <a href="" class="footer-link">Акции</a>
+            <a href="" class="footer-link">Доставка и оплата</a>
+            <a href="" class="footer-link">Гарантии</a>
+            <a href="" class="footer-link">Отзывы</a>
+            <a href="" class="footer-link">Оптовым покупателям</a>
+            <a href="" class="footer-link">Публичная оферта</a>
+            <a href="" class="footer-link">Контакты</a>
+            <a href="" class="footer-link">Ювелирный блог</a>
+        </div>
+        <div class="item-block-footer">
+            <p class="footer-title">Для женщин</p>
+            <a href="" class="footer-link">Кольца</a>
+            <a href="" class="footer-link">Серьги</a>
+            <a href="" class="footer-link">Подвески</a>
+            <a href="" class="footer-link">Браслеты</a>
+            <a href="" class="footer-link">Цепи и колье</a>
+            <a href="" class="footer-link">Броши</a>
+            <a href="" class="footer-link">Новинки</a>
+            <a href="" class="footer-link">Распродажа</a>
+        </div>
+        <div class="item-block-footer">
+            <p class="footer-title">Для мужчин</p>
+            <a href="" class="footer-link">Кольца мужские</a>
+            <a href="" class="footer-link">Цепи мужские</a>
+            <a href="" class="footer-link">Браслеты мужские</a>
+            <a href="" class="footer-link">Запонки и зажимы</a>
+        </div>
+        <div class="price-block">
+            <p class="footer-title">Способы оплаты</p>
+            <a href="" class="flex items-center justify-between mb-2">
+                <img src="/img/footer-photo.png" alt="footer-photo">
+                <span class="w-9/12 font-medium text-lg">Наложенным платежом</span>
+            </a>
+            <a href="" class="flex items-center justify-between mb-12">
+                <img src="/img/footer-photo.png" alt="footer-photo">
+                <span class="w-9/12 font-medium text-lg">Наличными или картой курьеру</span>
+            </a>
+
+            <p class="footer-title mb-6">Группы в социальных сетях</p>
+            <div class="flex">
+                <a href="" class="soc-link vk"></a>
+                <a href="" class="soc-link fb"></a>
+                <a href="" class="soc-link inst"></a>
+                <a href="" class="soc-link ok"></a>
+            </div>
+        </div>
     </div>
 </footer>
-<div>
-    <div class="max-w-6xl mx-auto">
-        копирайт
+<div class="bg-gray-300 py-8 text-center">
+    <div class="max-w-6xl mx-auto ">
+        <p class="text-sm">© 2020 <span class="font-semibold">Серена-Сильвер. Стильные серебряные украшения с натуральными камнями из Индии и Таиланда</span>. Интернет-магазин. Все права защищены.
+            115522 г.Москва, ул.Москворечье, д.4, корп.6, пом. 14. Телефон: <a href="tel:88002003255" class="font-semibold">8-800-200-3255</a>. E-mail: <a href="mailto:info@cerena-silver.ru" class="font-semibold">info@cerena-silver.ru</a></p>
     </div>
 </div>
 <script src="bundle.js"></script>
