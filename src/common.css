@@ -85,6 +85,9 @@
     .font-light-text {
         @apply leading-6 mb-7 font-light;
     }
+    .font-light {
+        @apply mb-20;
+    }
     .font-light-text span {
         @apply font-medium;
     }
