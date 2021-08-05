@@ -73,6 +73,10 @@
         @apply w-5 h-5;
         background: url("icons/link-photo.svg") no-repeat 0 0/contain;
     }
+    .link-play.active {
+        @apply w-5 h-5;
+        background: url("icons/link-photo.svg") no-repeat 0 0/contain;
+    }
     .pagination-str-img {
         @apply h-12 rounded bg-gray-200 flex items-center justify-center px-5;
     }
@@ -138,5 +142,17 @@
         background-size: 8px 6px;
         background-position: 50%;
         background-repeat: no-repeat;
+    }
+    .img-item {
+        @apply absolute top-0 left-0 duration-300;
+    }
+    .img-item.active {
+        @apply -left-full;
+    }
+    .video-item {
+        @apply absolute top-0 left-full duration-300;
+    }
+    .video-item.active {
+        @apply left-0;
     }
 }
