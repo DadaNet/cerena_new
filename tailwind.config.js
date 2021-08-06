@@ -30,6 +30,8 @@ module.exports = {
     extend: {
       backgroundColor: ['checked'],
       borderColor: ['checked'],
+      borderRadius: ['hover'],
+      fill: ['hover'],
     },
   },
 
