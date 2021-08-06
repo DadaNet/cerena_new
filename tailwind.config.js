@@ -32,6 +32,7 @@ module.exports = {
       borderColor: ['checked'],
       borderRadius: ['hover'],
       fill: ['hover'],
+      borderWidth: ['hover'],
     },
   },
 

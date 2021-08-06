@@ -49,57 +49,67 @@
         @apply bg-red text-white py-2 px-6 rounded transition duration-300 hover:bg-red-light;
     }
     .item-product {
-        @apply border border-gray rounded relative text-center hover:rounded-b-none;
+        @apply border border-gray rounded relative text-center hover:rounded-b-none hover:border-b-0;
     }
     .item-product__info {
-        @apply text-left opacity-0 absolute bottom-0 left-0 transform -translate-x-px z-10 px-5 pb-5 bg-white border-r border-l border-gray rounded-b flex flex-col text-xs font-light;
+        @apply text-left opacity-0 absolute bottom-0 left-0 transform -translate-x-px z-20 px-5 pb-5 bg-white border-r border-l border-gray rounded-b flex flex-col text-xs font-light;
         border-bottom: 8px solid #C0384E;
         width: calc(100% + 2px);
     }
     .item-product:hover .item-product__info {
-        @apply opacity-100 translate-y-full ;
-    }
-    .like {
-        @apply stroke-current text-gray transition hover:fill-current hover:text-red;
-        fill:none;
-    }
-    .active .like {
-        @apply fill-current;
+        @apply opacity-100 translate-y-full;
     }
 
-    .link-play {
+    .btn-like {
+        @apply border border-gray-light rounded text-center flex items-center justify-center hover:border-red;
+    }
+    .btn-like svg,
+    .icon-like svg {
+        @apply stroke-current text-gray transition;
+        fill:none;
+    }
+    .btn-like.active {
+        @apply border-red;
+    }
+    .btn-like.active svg,
+    .icon-like.active svg {
+        @apply fill-current text-red;
+    }
+    .btn-like:hover svg,
+    .icon-like:hover svg{
+        @apply fill-current text-red-light;
+    }
+
+    .btn-play svg,
+    .btn-photo svg {
         @apply stroke-current text-red transition transform hover:scale-110;
         fill:none;
     }
+    .btn-basket {
+        @apply flex items-center bg-red text-sm text-white rounded border border-red px-5 py-2 transition duration-300 hover:bg-red-light;
+    }
+    .btn-basket svg {
+        @apply fill-current text-white;
+    }
 
-    /*.item-product:hover .block-hover {*/
-    /*    @apply max-h-60 border-red pb-7;*/
-    /*}*/
+    .pagination {
+        @apply flex items-center justify-center mb-5 w-full;
+    }
+    .pagination-item {
+        @apply px-5 py-3 hover:bg-gray-light transition hover:shadow-md;
+    }
+    .pagination-item.active {
+        @apply bg-gray-light;
+    }
 
-    /*.link-play.active {*/
-    /*    @apply w-5 h-5;*/
-    /*    background: url("icons/link-photo.svg") no-repeat 0 0/contain;*/
-    /*}*/
-    /*.link-play.active {*/
-    /*    @apply w-5 h-5;*/
-    /*    background: url("icons/link-photo.svg") no-repeat 0 0/contain;*/
-    /*}*/
-    /*.pagination-str-img {*/
-    /*    @apply h-12 rounded bg-gray-200 flex items-center justify-center px-5;*/
-    /*}*/
-    /*.pagination-str {*/
-    /*    @apply rounded h-12 w-12 bg-transparent flex items-center justify-center hover:bg-gray-300 duration-300;*/
-    /*}*/
-    /*.pagination-str.active {*/
-    /*    @apply bg-gray-200;*/
-    /*}*/
-    /*.font-light-text {*/
-    /*    @apply leading-6 mb-7 font-light;*/
-    /*}*/
+    .text p {
+        @apply mb-6;
+    }
 
-    /*.font-light-text span {*/
-    /*    @apply font-medium;*/
-    /*}*/
+    .footer-menu a {
+        @apply block text-lg font-medium mb-3 transition hover:text-red transform hover:translate-x-2;
+    }
+
     /*.item-block-footer {*/
     /*    @apply w-1/5;*/
     /*}*/
