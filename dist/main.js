@@ -94,3 +94,14 @@ var swiperSmall = new Swiper(".one-block-slider", {
         prevEl: ".swiper-button-prev",
     },
 });
+var swiperSmall = new Swiper(".main-block-slider", {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 20,
+    initialSlide: 1,
+
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+});

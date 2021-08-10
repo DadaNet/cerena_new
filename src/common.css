@@ -62,7 +62,9 @@
     .item-product:hover .item-product__info {
         @apply opacity-100 translate-y-full;
     }
-
+    .item-product-main {
+        @apply border border-gray mb-6 rounded relative text-center border-b-4 duration-300 hover:border-red hover:shadow-xl;
+    }
     .btn-like {
         @apply border border-gray-light rounded text-center flex items-center justify-center hover:border-red;
     }
@@ -190,4 +192,20 @@
     .product-sidebar-item:hover img {
         @apply transition opacity-80;
     }
+    .about-block-map {
+        @apply h-80 flex flex-col justify-center items-center;
+        background: url("icons/about-main-bg.png") no-repeat center / contain;
+    }
+    .main-block-slider + .swiper-pagination {
+        @apply w-full flex items-center justify-center 2xl:-bottom-8;
+    }
+    .main-block-slider + .swiper-pagination .swiper-pagination-bullet {
+        @apply w-5 h-5 border-gray mx-3 bg-transparent border opacity-100;
+    }
+
+    .main-block-slider + .swiper-pagination .swiper-pagination-bullet-active {
+        @apply w-5 h-5;
+        background: url("icons/Oval.png") no-repeat 3.5px 3.5px / 10px 10px;
+    }
+
 }
