@@ -94,6 +94,16 @@ var swiperSmall = new Swiper(".one-block-slider", {
         prevEl: ".swiper-button-prev",
     },
 });
+var swiperSmall = new Swiper(".block-slider-about", {
+    loop: true,
+    slidesPerView: 3,
+    initialSlide: 1,
+
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
 var swiperSmall = new Swiper(".main-block-slider", {
     loop: true,
     slidesPerView: 1,

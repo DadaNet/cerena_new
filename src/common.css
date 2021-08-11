@@ -91,7 +91,7 @@
         fill:none;
     }
     .btn-basket {
-        @apply flex items-center bg-red text-sm text-white rounded border border-red px-5 py-2 transition duration-300 hover:bg-red-light;
+        @apply flex items-center bg-red text-sm text-white relative rounded border border-red px-5 py-2 transition duration-300 hover:bg-red-light;
     }
     .btn-basket svg {
         @apply fill-current text-white;
@@ -193,7 +193,7 @@
         @apply transition opacity-80;
     }
     .about-block-map {
-        @apply h-80 flex flex-col justify-center items-center;
+        @apply h-96 flex flex-col justify-center items-center;
         background: url("icons/about-main-bg.png") no-repeat center / contain;
     }
     .main-block-slider + .swiper-pagination {
@@ -208,4 +208,22 @@
         background: url("icons/Oval.png") no-repeat 3.5px 3.5px / 10px 10px;
     }
 
+    .block-slider-about a {
+        @apply border rounded duration-300 hover:border-red border-b-4;
+    }
+    .about-benefits img {
+        @apply h-40 w-full object-cover mb-5
+    }
+    .about-benefits .title {
+        @apply font-medium text-xl mb-4;
+    }
+    .block-slider img {
+        @apply object-none w-max;
+    }
+    .block-slider a {
+        @apply flex w-max;
+    }
+    .basket-mod {
+        @apply absolute top-full py-7 px-5 border-t-4 rounded border-red bg-white z-10;
+    }
 }
