@@ -1,34 +1,6 @@
-if ($(".like")) {
-    $(".like").click(function(e){
-        e.preventDefault();
-        $(this).toggleClass('active');
-    })
-}
+import Swiper from 'swiper';
 
-if ($(".like-product-str")) {
-    $(".like-product-str").click(function(e){
-        e.preventDefault();
-        $(this).toggleClass('active');
-    })
-}
-
-if ($(".like-bottom")) {
-    $(".like-bottom").click(function(e){
-        e.preventDefault();
-        $(this).toggleClass('active');
-    })
-}
-
-if ($(".block-img-video")) {
-    $(function() {
-        $(".block-img-video").on("click", ".link-play", function(e) {
-            e.preventDefault();
-            $(this).toggleClass("active");
-            $(".img-item", e.delegateTarget).toggleClass('active');
-            $(".video-item", e.delegateTarget).toggleClass('active');
-        })
-    });
-}
+import 'swiper/swiper-bundle.css';
 
 //slider str product -> photo product
 var swiperSmall = new Swiper(".slider-product-small", {
@@ -60,7 +32,7 @@ var swiperBig = new Swiper(".slider-product-big", {
 });
 
 
-var swiperSmall = new Swiper(".slider-comment", {
+var swiperSmall = new Swiper("#slider-comment", {
     loop: true,
     slidesPerView: 3,
     spaceBetween: 20,

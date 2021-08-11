@@ -10,7 +10,10 @@ module.exports = {
         rules: [
             {
                 test: /\.js$/i,
-                include: path.resolve(__dirname, 'src'),
+                include: [
+                    path.resolve(__dirname, 'node_modules'),
+                    path.resolve(__dirname, 'src'),
+                    ],
                 use: {
                     loader: 'babel-loader',
                     options: {
@@ -20,7 +23,10 @@ module.exports = {
             },
             {
                 test: /\.css$/i,
-                include: path.resolve(__dirname, 'src'),
+                include: [
+                    path.resolve(__dirname, 'node_modules'),
+                    path.resolve(__dirname, 'src'),
+                ],
                 use: ['style-loader', 'css-loader', 'postcss-loader'],
             },
         ],
