@@ -1,3 +1,9 @@
+import $ from "jquery";
+window.jQuery = $;
+window.$ = $;
+
+import './swiper-sliders.js';
+
 if ($(".like")) {
     $(".like").click(function(e){
         e.preventDefault();

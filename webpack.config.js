@@ -11,8 +11,8 @@ module.exports = {
             {
                 test: /\.js$/i,
                 include: [
-                    path.resolve(__dirname, 'node_modules'),
                     path.resolve(__dirname, 'src'),
+                    path.resolve(__dirname, "node_modules"),
                     ],
                 use: {
                     loader: 'babel-loader',
@@ -24,8 +24,8 @@ module.exports = {
             {
                 test: /\.css$/i,
                 include: [
-                    path.resolve(__dirname, 'node_modules'),
                     path.resolve(__dirname, 'src'),
+                    path.resolve(__dirname, "node_modules"),
                 ],
                 use: ['style-loader', 'css-loader', 'postcss-loader'],
             },

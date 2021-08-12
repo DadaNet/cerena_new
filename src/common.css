@@ -83,7 +83,7 @@
 
     /*  ITEMS CATALOG  */
     .item-product {
-        @apply border border-gray rounded relative text-center hover:rounded-b-none hover:border-b-0;
+        @apply block border border-gray rounded relative text-center hover:rounded-b-none hover:border-b-0;
     }
     .item-product__info {
         @apply text-left opacity-0 absolute bottom-0 left-0 transform -translate-x-px z-20 px-5 pb-5 bg-white border-r border-l border-gray rounded-b flex flex-col text-xs font-light;
@@ -151,27 +151,33 @@
 
     /* SWIPER SLIDER */
 
-    .swiper-slide img {
-        @apply w-full h-full object-cover;
-    }
-
     .swiper-button-prev,
-    .swiper-button-next,
-    .swiper-button-prev-two {
-        @apply rounded-full bg-white -left-5 w-10 h-10 shadow-md -mt-10 z-10;
-    }
-    .swiper-button-prev::after,
-    .swiper-button-prev-two::after {
-        content: '' !important;
+    .swiper-button-next {
+        @apply rounded-full bg-white shadow-md w-10 h-10 z-10 -mt-5 absolute top-1/2 flex items-center justify-center cursor-pointer;
     }
 
-    .swiper-button-next-two {
-        @apply w-10 h-10 rounded-full left-auto -right-5 shadow-md absolute top-2/4 -mt-10 z-10;
+    .swiper-button-prev {
+        @apply -left-5 !important;
     }
-    .swiper-button-next::after,
-    .swiper-button-next-two::after {
-        content: '' !important;
+
+    .swiper-button-next {
+        @apply -right-5 !important;
     }
+
+    .swiper-slide .item-product {
+        @apply hover:rounded-b hover:border-b;
+    }
+
+    .swiper-button-disabled {
+        @apply hidden;
+    }
+
+    /*.swiper-button-prev-two {*/
+    /*    @apply rounded-full bg-white -left-5 w-10 h-10 shadow-md z-10;*/
+    /*}*/
+    /*.swiper-button-next-two {*/
+    /*    @apply w-10 h-10 rounded-full left-auto -right-5 shadow-md absolute top-2/4 -mt-10 z-10;*/
+    /*}*/
 
     /* Product */
     .product-sidebar-item {
@@ -205,12 +211,12 @@
     .about-benefits .title {
         @apply font-medium text-xl mb-4;
     }
-    .block-slider img {
-        @apply object-none w-max;
-    }
-    .block-slider a {
-        @apply flex w-max;
-    }
+    /*.block-slider img {*/
+    /*    @apply object-none w-max;*/
+    /*}*/
+    /*.block-slider a {*/
+    /*    @apply flex w-max;*/
+    /*}*/
     .basket-mod {
         @apply absolute top-full py-7 px-5 border-t-4 rounded border-red bg-white z-10;
     }

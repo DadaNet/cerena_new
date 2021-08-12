@@ -1,10 +1,41 @@
-import Swiper from 'swiper';
+import Swiper, { Navigation } from 'swiper';
 
-import 'swiper/swiper-bundle.css';
+Swiper.use([Navigation]);
+
+import 'swiper/swiper.min.css';
+
+// SLIDER COMMENTS
+var swiperComment = new Swiper("#slider-comment .swiper-container", {
+    loop: true,
+    slidesPerView: 3,
+    spaceBetween: 20,
+    initialSlide: 1,
+    watchOverflow: true,
+
+    navigation: {
+        nextEl: "#slider-comment .swiper-button-next",
+        prevEl: "#slider-comment .swiper-button-prev",
+    },
+
+});
+
+// SLIDER RECENT VIEW
+var swiperRecent = new Swiper("#slider-recent .swiper-container", {
+    loop: false,
+    slidesPerView: 3,
+    spaceBetween: 20,
+    initialSlide: 1,
+    watchOverflow: true,
+
+    navigation: {
+        nextEl: "#slider-recent .swiper-button-next",
+        prevEl: "#slider-recent .swiper-button-prev",
+    },
+});
 
 //slider str product -> photo product
 var swiperSmall = new Swiper(".slider-product-small", {
-    loop: true,
+    loop: false,
     slidesPerView: 4,
     freeMode: true,
     watchSlidesVisibility: true,
@@ -23,7 +54,7 @@ var swiperSmall = new Swiper(".slider-product-small", {
     },
 });
 var swiperBig = new Swiper(".slider-product-big", {
-    loop: true,
+    loop: false,
     slideToClickedSlide: true,
 
     thumbs: {
@@ -31,30 +62,6 @@ var swiperBig = new Swiper(".slider-product-big", {
     },
 });
 
-
-var swiperSmall = new Swiper("#slider-comment", {
-    loop: true,
-    slidesPerView: 3,
-    spaceBetween: 20,
-    initialSlide: 1,
-
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-});
-
-var swiperSmall = new Swiper(".slider-product-str", {
-    loop: true,
-    slidesPerView: 3,
-    spaceBetween: 20,
-    initialSlide: 1,
-
-    navigation: {
-        nextEl: ".swiper-button-next-two",
-        prevEl: ".swiper-button-prev-two",
-    },
-});
 var swiperSmall = new Swiper(".one-block-slider", {
     loop: true,
     slidesPerView: 1,
