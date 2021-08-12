@@ -152,7 +152,7 @@
         @apply w-4/12 mb-7 text-center;
     }
     .advantage-img {
-        @apply w-16 h-16 rounded-full overflow-hidden ml-auto mr-auto mb-3;
+        @apply w-16 h-16 overflow-hidden ml-auto mr-auto mb-3;
     }
     .advantage-name {
         @apply text-red font-medium text-xl mb-2;
