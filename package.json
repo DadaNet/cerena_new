@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "jquery": "^3.6.0",
-    "postcss-import": "^14.0.2"
+    "postcss-import": "^14.0.2",
+    "swiper": "^6.8.1"
   }
 }
