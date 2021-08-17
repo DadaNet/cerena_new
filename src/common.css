@@ -136,19 +136,6 @@
         @apply block text-lg font-medium mb-3 transition hover:text-red transform hover:translate-x-2;
     }
 
-    /* Main */
-    .one-block-slider img {
-        @apply object-cover w-full h-full;
-    }
-    .item-category {
-        @apply flex justify-center items-end p-9 text-center rounded h-96 mx-2 mb-5 font-medium text-2xl duration-300;
-        background:#F2F2F2 url("icons/bg-item-category.svg") no-repeat center / 77px 66px;
-    }
-    .item-category:hover {
-        @apply text-white;
-        background:#C0384E url("icons/bg-item-category-hover.svg") no-repeat center / 77px 66px;
-    }
-
     /* SWIPER SLIDER */
 
     .swiper-button-prev,
@@ -178,6 +165,20 @@
     /*.swiper-button-next-two {*/
     /*    @apply w-10 h-10 rounded-full left-auto -right-5 shadow-md absolute top-2/4 -mt-10 z-10;*/
     /*}*/
+
+
+    /* Main */
+    .one-block-slider img {
+        @apply object-cover w-full h-full;
+    }
+    .item-category {
+        @apply flex justify-center items-end p-9 text-center rounded h-96 mx-2 mb-5 font-medium text-2xl duration-300;
+        background:#F2F2F2 url("icons/bg-item-category.svg") no-repeat center / 77px 66px;
+    }
+    .item-category:hover {
+        @apply text-white;
+        background:#C0384E url("icons/bg-item-category-hover.svg") no-repeat center / 77px 66px;
+    }
 
     /* Product */
     .product-sidebar-item {

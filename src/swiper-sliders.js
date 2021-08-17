@@ -1,6 +1,6 @@
-import Swiper, { Navigation } from 'swiper';
+import Swiper, { Navigation, Thumbs } from 'swiper';
 
-Swiper.use([Navigation]);
+Swiper.use([Navigation,Thumbs]);
 
 import 'swiper/swiper.min.css';
 
@@ -34,7 +34,7 @@ var swiperRecent = new Swiper("#slider-recent .swiper-container", {
 });
 
 //slider str product -> photo product
-var swiperSmall = new Swiper(".slider-product-small", {
+var swiperThumb = new Swiper("#sliderThumb", {
     loop: false,
     slidesPerView: 4,
     freeMode: true,
@@ -53,16 +53,15 @@ var swiperSmall = new Swiper(".slider-product-small", {
         },
     },
 });
-var swiperBig = new Swiper(".slider-product-big", {
+var swiperBig = new Swiper("#sliderBig", {
     loop: false,
     slideToClickedSlide: true,
-
     thumbs: {
-        swiper: swiperSmall,
+        swiper: swiperThumb,
     },
 });
 
-var swiperSmall = new Swiper(".one-block-slider", {
+var swiperЕцў = new Swiper(".one-block-slider", {
     loop: true,
     slidesPerView: 1,
     spaceBetween: 20,
