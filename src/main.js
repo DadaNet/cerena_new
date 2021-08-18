@@ -4,6 +4,8 @@ window.$ = $;
 
 import './swiper-sliders.js';
 
+import './zoomove.js';
+
 if ($(".like")) {
     $(".like").click(function(e){
         e.preventDefault();
