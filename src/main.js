@@ -37,3 +37,4 @@ if ($(".block-img-video")) {
         })
     });
 }
+
