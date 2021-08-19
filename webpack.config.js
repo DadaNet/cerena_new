@@ -9,6 +9,13 @@ module.exports = {
     module: {
         rules: [
             {
+                test: require.resolve("jquery"),
+                loader: "expose-loader",
+                options: {
+                    exposes: ["$", "jQuery"],
+                },
+            },
+            {
                 test: /\.js$/i,
                 include: [
                     path.resolve(__dirname, 'src'),
