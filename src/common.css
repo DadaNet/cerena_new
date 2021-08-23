@@ -247,3 +247,87 @@
  .item-new-product {
      @apply block px-2 w-full border hover:border-b-4 hover:border-red duration-300;
  }
+
+ .tr-title {
+     @apply bg-red rounded py-2.5;
+ }
+
+.table-basket th {
+    @apply text-white;
+}
+
+ .table-basket td {
+     @apply flex items-center;
+ }
+
+.table-basket tr {
+     @apply flex w-full justify-between mb-7;
+ }
+
+.table-basket img {
+    @apply w-16 h-16 rounded mr-4;
+}
+
+.table-text {
+    @apply text-sm mb-2;
+}
+
+.table-size {
+    @apply text-sm;
+}
+
+.table-basket .code {
+    @apply text-sm uppercase text-center mx-auto;
+}
+
+.table-col {
+    @apply justify-center;
+}
+
+.col-link {
+    @apply flex items-center justify-center bg-gray-200 text-xl	w-7 h-7;
+}
+
+.col-number {
+    @apply h-7 mx-5 flex items-center;
+}
+
+.table-col-price {
+    @apply justify-center;
+}
+
+.basket-input {
+    @apply flex w-full mb-7 relative;
+}
+
+.basket-input input {
+    @apply absolute top-0 left-0 w-0 h-0 opacity-0;
+}
+
+.basket-inp-visible {
+    @apply w-5 h-5 rounded-full border flex items-center justify-center mr-4 duration-300;
+}
+
+.basket-inp-visible span {
+    @apply w-3 h-3 rounded-full bg-red opacity-0 duration-300;
+}
+
+.basket-text-block {
+    @apply w-10/12 flex flex-col;
+}
+
+.basket-inp-title {
+    @apply font-medium mb-3;
+}
+
+.basket-inp-text {
+    @apply mb-3;
+}
+
+.basket-input input:checked + .basket-inp-visible {
+    @apply border-red;
+}
+
+.basket-input input:checked + .basket-inp-visible span {
+    @apply opacity-100;
+}
