@@ -239,3 +239,11 @@
     @apply text-sm text-center;
  }
 
+ #slider-comment .swiper-button-prev::after,
+ #slider-comment .swiper-button-next::after {
+     @apply hidden;
+ }
+
+ .item-new-product {
+     @apply block px-2 w-full border hover:border-b-4 hover:border-red duration-300;
+ }
