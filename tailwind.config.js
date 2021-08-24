@@ -29,10 +29,12 @@ module.exports = {
   variants: {
     extend: {
       backgroundColor: ['checked'],
-      borderColor: ['checked'],
+      borderColor: ['checked', 'hover'],
       borderRadius: ['hover'],
       fill: ['hover'],
       borderWidth: ['hover'],
+      margin: ['hover'],
+      padding: ['hover'],
     },
   },
 

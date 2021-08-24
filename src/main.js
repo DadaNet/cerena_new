@@ -38,3 +38,9 @@ if ($(".block-img-video")) {
     });
 }
 
+if ($("#basketModal")) {
+    $("#basketTop").hover(function (e) {
+        $("#basketModal").toggleClass("hidden");
+    });
+}
+

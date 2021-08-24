@@ -85,43 +85,80 @@
                 <img src="img/cerena-silver-logo.svg" alt="" class="object-contain w-full h-full">
             </a>
         </div>
-        <div class="w-1/4 flex flex-col items-end relative">
+        <div class="w-1/4 flex flex-col items-end">
             <a href="#"
-               class="btn-like active text-sm text-red px-5 py-2 mb-3 hover:border-red-light hover:text-red-light">
+               class="btn-like w-48 flex items-center active text-sm text-red px-5 py-2 mb-3 hover:border-red-light hover:text-red-light">
                 <svg class="mr-3" width="22" height="20" viewBox="0 0 22 20" xmlns="http://www.w3.org/2000/svg">
                     <path d="M20.0287 9.40894L20.0286 9.40883L20.0202 9.41793L11 19.26L1.97977 9.41793L1.9799 9.41782L1.97085 9.40844C1.06267 8.46794 0.5 7.16263 0.5 5.71468C0.5 4.26711 1.06242 2.9642 1.97131 2.02044L1.97179 2.01994C2.87739 1.07699 4.12377 0.5 5.5 0.500003L5.49997 0.5L5.4994 0.499998L5.49971 0.500001C5.5 0.500003 5.50048 0.500008 5.50116 0.500018L5.51612 0.50037C5.53108 0.50083 5.55591 0.501854 5.58995 0.504126C5.65804 0.508672 5.76287 0.518205 5.89923 0.538176C6.17201 0.578127 6.57033 0.659757 7.05291 0.826467C8.01598 1.15916 9.32127 1.83284 10.6398 3.20269L11 3.57696L11.3602 3.20269C12.6787 1.83284 13.984 1.15916 14.9471 0.826467C15.4297 0.659757 15.828 0.578127 16.1008 0.538176C16.2371 0.518205 16.342 0.508672 16.41 0.504126C16.4441 0.501854 16.4689 0.50083 16.4839 0.50037L16.4988 0.500018C16.4996 0.500008 16.5001 0.500003 16.5004 0.5C17.8759 0.5001 19.1225 1.07945 20.0287 2.02043L20.0287 2.02044C20.9375 2.96411 21.5 4.26976 21.5 5.71468C21.5 7.15941 20.9349 8.4679 20.0287 9.40894Z"/>
                 </svg>
                 <span class="w-28">Отложено (<span>1000</span>)</span>
             </a>
-            <a href="#"
-               class="btn-basket">
-                <svg class="mr-3" width="23" height="23" viewBox="0 0 23 23" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M7.05148 0L2.78303 7.66352H1.15016C0.79139 7.66352 0.454467 7.83576 0.235985 8.12715C0.0186528 8.41973 -0.0537912 8.7996 0.0405012 9.15352L3.25909 21.2611C3.53047 22.2851 4.44349 23 5.47841 23H17.5214C18.554 23 19.467 22.2863 19.7407 21.2599L22.9593 9.15234C23.0536 8.79842 22.9823 8.41855 22.7638 8.12597C22.5442 7.83576 22.2073 7.66352 21.8485 7.66352H20.2156L15.9472 0L13.9509 1.17029L17.5674 7.66352H5.43126L9.04772 1.17029L7.05148 0ZM13.7991 12.3824H16.099V18.2811H13.7991V12.3824ZM6.8997 12.3824H9.19951V18.2811H6.8997V12.3824Z"/>
-                </svg>
-                <span class="w-28">Корзина (<span>2</span>)</span>
+            <div id="basketTop" class="relative">
+                <a href="#" class="btn-basket w-48">
+                    <svg class="mr-3" width="23" height="23" viewBox="0 0 23 23" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.05148 0L2.78303 7.66352H1.15016C0.79139 7.66352 0.454467 7.83576 0.235985 8.12715C0.0186528 8.41973 -0.0537912 8.7996 0.0405012 9.15352L3.25909 21.2611C3.53047 22.2851 4.44349 23 5.47841 23H17.5214C18.554 23 19.467 22.2863 19.7407 21.2599L22.9593 9.15234C23.0536 8.79842 22.9823 8.41855 22.7638 8.12597C22.5442 7.83576 22.2073 7.66352 21.8485 7.66352H20.2156L15.9472 0L13.9509 1.17029L17.5674 7.66352H5.43126L9.04772 1.17029L7.05148 0ZM13.7991 12.3824H16.099V18.2811H13.7991V12.3824ZM6.8997 12.3824H9.19951V18.2811H6.8997V12.3824Z"/>
+                    </svg>
+                    <span class="w-28">Корзина (<span>2</span>)</span>
+                </a>
+
                 <!--modal-->
-<!--                <div class="basket-mod">-->
-<!--                    <div class="basket-item">-->
-<!--                        <img src="img/basket-img.png" alt="">-->
-<!--                        <div class="basket-info">-->
-<!--                            <p>Кольцо «Классик»<span>с агатом и фианитами</span></p>-->
-<!--                            <p>Артикул:<span> 000000000000</span></p>-->
-<!--                        </div>-->
-<!--                        <div class="basket-col">-->
-<!--                            <div>-->
-<!--                                <a href="">+</a>-->
-<!--                                <p>1</p>-->
-<!--                                <a href="">-</a>-->
-<!--                            </div>-->
-<!--                            <p class="basket-price">1940 ₽</p>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-            </a>
+                <div id="basketModal" class="hidden absolute top-12 right-0 p-4 border-t-4 rounded border-red bg-white z-30 w-max shadow">
+                    <div class="flex items-center justify-between mb-2 border-b border-gray-light pb-4 mb-4">
+                        <img src="/img/img-01.jpg" alt="Кольцо «Венок»"
+                             class="w-16 h-16 rounded border border-gray-light object-cover">
+                        <div class="mx-5 flex-shrink-0 w-1/2">
+                            <a href="#" class="block mb-1 transition hover:text-red">
+                                <p class="text-sm font-medium">Кольцо «Венок»</p>
+                                <p class="text-xs">с агатом, жемчугом и марказитами</p>
+                            </a>
+                            <p class="text-gray text-xs">Артикул: К-0195-5</p>
+                        </div>
+                        <div>
+                            <div class="flex text-sm mb-3">
+                                <div class="quantity-controls quantity-minus cursor-pointer px-3">–</div>
+                                <input type="text"
+                                       class="quantity-input bg-gray-light text-center" size="1"
+                                       maxlength="4" name="quantity[0]" value="1" data-quantity="1" step="1" min="1">
+                                <div class="quantity-controls quantity-plus cursor-pointer px-3">+</div>
+                            </div>
+                            <p class="font-medium text-center">1940 ₽</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between mb-2 border-b border-gray-light pb-4 mb-4">
+                        <img src="/img/img-03.jpg" alt="Кольцо «Капель»"
+                             class="w-16 h-16 rounded border border-gray-light object-cover">
+                        <div class="mx-5 flex-shrink-0 w-1/2">
+                            <a href="#" class="block mb-1 transition hover:text-red">
+                                <p class="text-sm font-medium">Кольцо «Капель»</p>
+                                <p class="text-xs">с султанитом и марказитами</p>
+                            </a>
+                            <p class="text-gray text-xs">Артикул: ТАСН.351ТНN</p>
+                        </div>
+                        <div>
+                            <div class="flex text-sm mb-3">
+                                <div class="quantity-controls quantity-minus cursor-pointer px-3">–</div>
+                                <input type="text"
+                                       class="quantity-input bg-gray-light text-center" size="1"
+                                       maxlength="4" name="quantity[0]" value="1" data-quantity="1" step="1" min="1">
+                                <div class="quantity-controls quantity-plus cursor-pointer px-3">+</div>
+                            </div>
+                            <p class="font-medium text-center">3920 ₽</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between ">
+                        <a href="#" class="btn-red">Перейти в корзину</a>
+                        <div class="text-right">
+                            <p class="text-sm">Итого:</p>
+                            <p class="text-red font-medium">5860 ₽</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
 </div>
-<nav class="bg-white sticky top-0 bg-opacity-80 z-50">
+<nav class="bg-white sticky top-0 bg-opacity-80 z-20">
     <div class="max-w-6xl mx-auto">
         <div class="flex justify-between">
             <a href="#" class="text-lg uppercase py-4 transition hover:text-red">Кольца</a>
@@ -182,7 +219,8 @@
                     <img src="img/main-str-slider-one-block.png" alt="">
 
                     <p class="title">Проба и клеймо</p>
-                    <p class="text">Все изделия проходят проверку в отделениях Государственной Инспекции Пробирного Надзора и клеймятся в соответствии с
+                    <p class="text">Все изделия проходят проверку в отделениях Государственной Инспекции Пробирного
+                        Надзора и клеймятся в соответствии с
                         законом Российской Федерации о пробировании и клеймении ювелирных изделий.
                         У каждого изделия есть опломбированный паспорт-бирка,
                         с указанием основной информации: вес, артикул изделия, вставка и пр.</p>
@@ -191,8 +229,10 @@
                     <img src="img/main-str-slider-one-block.png" alt="">
 
                     <p class="title">Ассортимент и новинки</p>
-                    <p class="text">Каталог украшений постоянно обновляется и отличается разнообразием коллекций разного стиля и ценового диапазона.
-                        Уникальный ассортимент нашего интернет-магазина украшений из серебра, нацеленный на самую широкую аудиторию, позволит вам легко выбрать кольца,
+                    <p class="text">Каталог украшений постоянно обновляется и отличается разнообразием коллекций разного
+                        стиля и ценового диапазона.
+                        Уникальный ассортимент нашего интернет-магазина украшений из серебра, нацеленный на самую
+                        широкую аудиторию, позволит вам легко выбрать кольца,
                         серьги, подвески, броши, цепи, браслеты и колье,
                         а также разнообразные украшения для мужчин.</p>
                 </div>
@@ -200,14 +240,17 @@
                     <img src="img/main-str-slider-one-block.png" alt="">
 
                     <p class="title">Быстрая доставка и удобная оплата</p>
-                    <p class="text">Используем только удобные Вам виды оплаты и доставляем украшения прямо к двери Вашего дома или в ближайшее почтовое отделение.</p>
+                    <p class="text">Используем только удобные Вам виды оплаты и доставляем украшения прямо к двери
+                        Вашего дома или в ближайшее почтовое отделение.</p>
                 </div>
                 <div class="about-benefits">
                     <img src="img/main-str-slider-one-block.png" alt="">
 
                     <p class="title">Клиентская поддержка</p>
-                    <p class="text">Наши менеджеры на связи и рады проконсультировать, ответить на вопросы и помочь подобрать подходящие украшения.
-                        Заказывайте в интернет магазине «Серена-Сильвер» просто и с удовольствием. Ведь мы с вами, чтобы приносить радость!</p>
+                    <p class="text">Наши менеджеры на связи и рады проконсультировать, ответить на вопросы и помочь
+                        подобрать подходящие украшения.
+                        Заказывайте в интернет магазине «Серена-Сильвер» просто и с удовольствием. Ведь мы с вами, чтобы
+                        приносить радость!</p>
                 </div>
             </div>
 

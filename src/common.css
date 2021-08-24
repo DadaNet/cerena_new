@@ -50,33 +50,41 @@
     .btn-red {
         @apply bg-red text-white py-2 px-6 rounded transition duration-300 hover:bg-red-light;
     }
+
     .btn-like {
         @apply border border-gray rounded text-center flex items-center justify-center hover:border-red;
     }
+
     .btn-like svg,
     .icon-like svg {
         @apply stroke-current text-gray transition;
-        fill:none;
+        fill: none;
     }
+
     .btn-like.active {
         @apply border-red;
     }
+
     .btn-like.active svg,
     .icon-like.active svg {
         @apply fill-current text-red;
     }
+
     .btn-like:hover svg,
-    .icon-like:hover svg{
+    .icon-like:hover svg {
         @apply fill-current text-red-light;
     }
+
     .btn-play svg,
     .btn-photo svg {
         @apply stroke-current text-red transition transform hover:scale-110;
-        fill:none;
+        fill: none;
     }
+
     .btn-basket {
         @apply flex items-center bg-red text-sm text-white relative rounded border border-red px-5 py-2 transition duration-300 hover:bg-red-light;
     }
+
     .btn-basket svg {
         @apply fill-current text-white;
     }
@@ -85,20 +93,22 @@
     .item-product {
         @apply block border border-gray rounded relative text-center hover:rounded-b-none hover:border-b-0;
     }
+
     .item-product__info {
         @apply text-left opacity-0 absolute bottom-0 left-0 transform -translate-x-px z-20 px-5 pb-5 bg-white border-r border-l border-gray rounded-b flex flex-col text-xs font-light;
         border-bottom: 8px solid #C0384E;
         width: calc(100% + 2px);
     }
+
     .item-product:hover .item-product__info {
         @apply opacity-100 translate-y-full;
     }
+
     .item-product-main {
         @apply border border-gray mb-6 rounded relative text-center border-b-4 duration-300 hover:border-red hover:shadow-xl;
     }
 
     /* SIZES LABELS */
-
     .sizes {
         @apply flex flex-wrap;
     }
@@ -119,9 +129,11 @@
     .pagination {
         @apply flex items-center justify-center mb-5 w-full;
     }
+
     .pagination-item {
         @apply px-5 py-3 hover:bg-gray-light transition hover:shadow-md;
     }
+
     .pagination-item.active {
         @apply bg-gray-light;
     }
@@ -137,7 +149,6 @@
     }
 
     /* SWIPER SLIDER */
-
     .swiper-button-prev,
     .swiper-button-next {
         @apply rounded-full bg-white shadow-md w-10 h-10 z-10 -mt-5 absolute top-1/2 flex items-center justify-center cursor-pointer;
@@ -159,91 +170,59 @@
         @apply hidden;
     }
 
-    /*.swiper-button-prev-two {*/
-    /*    @apply rounded-full bg-white -left-5 w-10 h-10 shadow-md z-10;*/
-    /*}*/
-    /*.swiper-button-next-two {*/
-    /*    @apply w-10 h-10 rounded-full left-auto -right-5 shadow-md absolute top-2/4 -mt-10 z-10;*/
-    /*}*/
-
 
     /* Main */
     .one-block-slider img {
         @apply object-cover w-full h-full;
     }
+
     .item-category {
         @apply flex justify-center items-end p-9 text-center rounded h-96 mx-2 mb-5 font-medium text-2xl duration-300;
-        background:#F2F2F2 url("icons/bg-item-category.svg") no-repeat center / 77px 66px;
+        background: #F2F2F2 url("icons/bg-item-category.svg") no-repeat center / 77px 66px;
     }
+
     .item-category:hover {
         @apply text-white;
-        background:#C0384E url("icons/bg-item-category-hover.svg") no-repeat center / 77px 66px;
+        background: #C0384E url("icons/bg-item-category-hover.svg") no-repeat center / 77px 66px;
+    }
+
+    .about-block-map {
+        @apply h-96 flex flex-col justify-center items-center;
+        background: url("icons/about-main-bg.png") no-repeat center;
     }
 
     /* Product */
     .product-sidebar-item {
         @apply flex items-center mb-2 transition hover:text-red;
     }
+
     .product-sidebar-item:hover img {
         @apply transition opacity-80;
     }
-    .about-block-map {
-        @apply h-96 flex flex-col justify-center items-center;
-        background: url("icons/about-main-bg.png") no-repeat center / contain;
-    }
+
     .main-block-slider + .swiper-pagination {
-        @apply w-full flex items-center justify-center 2xl:-bottom-8;
+        @apply w-full flex items-center justify-center;
     }
+
     .main-block-slider + .swiper-pagination .swiper-pagination-bullet {
         @apply w-5 h-5 border-gray mx-3 bg-transparent border opacity-100;
     }
 
     .main-block-slider + .swiper-pagination .swiper-pagination-bullet-active {
         @apply w-5 h-5;
-        background: url("icons/Oval.png") no-repeat 3.5px 3.5px / 10px 10px;
+        background: url("icons/Oval.png") no-repeat;
     }
 
-    .block-slider-about a {
-        @apply border rounded duration-300 hover:border-red border-b-4;
-    }
+    /* ABOUT */
     .about-benefits img {
         @apply h-40 w-full object-cover mb-5
     }
+
     .about-benefits .title {
         @apply font-medium text-xl mb-4;
     }
-    /*.block-slider img {*/
-    /*    @apply object-none w-max;*/
-    /*}*/
-    /*.block-slider a {*/
-    /*    @apply flex w-max;*/
-    /*}*/
-    .basket-mod {
-        @apply absolute top-full py-7 px-5 border-t-4 rounded border-red bg-white z-10;
+
+    .item-new-product {
+        @apply block px-2 w-full border hover:border-b-4 hover:border-red duration-300;
     }
 }
-
-.advantage-item {
-    @apply w-1/3;
-}
-
-.advantage-img {
-    @apply w-16 h-16 rounded mx-auto mb-4;
-}
-
-.advantage-name {
-    @apply text-center text-red font-medium text-2xl mb-1;
-}
-
- .advantage-text {
-    @apply text-sm text-center;
- }
-
- #slider-comment .swiper-button-prev::after,
- #slider-comment .swiper-button-next::after {
-     @apply hidden;
- }
-
- .item-new-product {
-     @apply block px-2 w-full border hover:border-b-4 hover:border-red duration-300;
- }
