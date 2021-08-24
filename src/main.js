@@ -38,3 +38,9 @@ if ($(".block-img-video")) {
     });
 }
 
+if ($(".btn-basket")) {
+    $(".btn-basket").click(function(e){
+        e.preventDefault();
+        $('.basket-mod').toggleClass('active');
+    })
+}

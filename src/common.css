@@ -219,8 +219,51 @@
     /*    @apply flex w-max;*/
     /*}*/
     .basket-mod {
-        @apply absolute top-full py-7 px-5 border-t-4 rounded border-red bg-white z-10;
+        @apply w-max absolute top-24 right-0 px-5 border-t-0 rounded border-red bg-white z-50 shadow-lg max-h-0 duration-300 overflow-hidden;
     }
+
+    .basket-mod.active {
+        @apply max-h-80 border-t-8;
+    }
+}
+
+.basket-item-mod {
+    @apply flex items-center justify-between border-b pb-4 mb-4;
+}
+.basket-item-mod:first-child {
+    @apply mt-7;
+}
+.basket-item-mod > img {
+    @apply w-12 h-12 rounded mr-5
+}
+
+.basket-info-mod {
+    @apply w-max mr-14;
+}
+
+.basket-info-name-mod {
+    @apply text-sm;
+}
+
+.basket-info-code-mod {
+    @apply text-sm text-gray-300;
+}
+
+.basket-col-mod > div {
+    @apply flex items-center mb-2;
+}
+
+.basket-col-mod .plus,
+.basket-col-mod .minus {
+    @apply text-sm;
+}
+
+.basket-col-mod .number {
+    @apply text-sm flex items-center justify-center w-6 h-6 bg-gray-200 mx-3;
+}
+
+.basket-info-name-mod span {
+    @apply block text-xs mb-1;
 }
 
 .advantage-item {
@@ -237,6 +280,10 @@
 
  .advantage-text {
     @apply text-sm text-center;
+ }
+
+ .basket-price-mod {
+     @apply font-medium text-right;
  }
 
  #slider-comment .swiper-button-prev::after,
