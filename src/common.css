@@ -364,3 +364,6 @@
         @apply opacity-100;
     }
 }
+.main-block-slider img {
+    @apply w-full h-full object-cover;
+}
