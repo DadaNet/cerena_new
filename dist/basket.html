@@ -85,65 +85,81 @@
                 <img src="img/cerena-silver-logo.svg" alt="" class="object-contain w-full h-full">
             </a>
         </div>
-        <div class="w-1/4 flex flex-col items-end relative">
+        <div class="w-1/4 flex flex-col items-end">
             <a href="#"
-               class="btn-like active text-sm text-red px-5 py-2 mb-3 hover:border-red-light hover:text-red-light">
+               class="btn-like w-48 flex items-center active text-sm text-red px-5 py-2 mb-3 hover:border-red-light hover:text-red-light">
                 <svg class="mr-3" width="22" height="20" viewBox="0 0 22 20" xmlns="http://www.w3.org/2000/svg">
                     <path d="M20.0287 9.40894L20.0286 9.40883L20.0202 9.41793L11 19.26L1.97977 9.41793L1.9799 9.41782L1.97085 9.40844C1.06267 8.46794 0.5 7.16263 0.5 5.71468C0.5 4.26711 1.06242 2.9642 1.97131 2.02044L1.97179 2.01994C2.87739 1.07699 4.12377 0.5 5.5 0.500003L5.49997 0.5L5.4994 0.499998L5.49971 0.500001C5.5 0.500003 5.50048 0.500008 5.50116 0.500018L5.51612 0.50037C5.53108 0.50083 5.55591 0.501854 5.58995 0.504126C5.65804 0.508672 5.76287 0.518205 5.89923 0.538176C6.17201 0.578127 6.57033 0.659757 7.05291 0.826467C8.01598 1.15916 9.32127 1.83284 10.6398 3.20269L11 3.57696L11.3602 3.20269C12.6787 1.83284 13.984 1.15916 14.9471 0.826467C15.4297 0.659757 15.828 0.578127 16.1008 0.538176C16.2371 0.518205 16.342 0.508672 16.41 0.504126C16.4441 0.501854 16.4689 0.50083 16.4839 0.50037L16.4988 0.500018C16.4996 0.500008 16.5001 0.500003 16.5004 0.5C17.8759 0.5001 19.1225 1.07945 20.0287 2.02043L20.0287 2.02044C20.9375 2.96411 21.5 4.26976 21.5 5.71468C21.5 7.15941 20.9349 8.4679 20.0287 9.40894Z"/>
                 </svg>
                 <span class="w-28">Отложено (<span>1000</span>)</span>
             </a>
-            <a href="#"
-               class="btn-basket">
-                <svg class="mr-3" width="23" height="23" viewBox="0 0 23 23" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M7.05148 0L2.78303 7.66352H1.15016C0.79139 7.66352 0.454467 7.83576 0.235985 8.12715C0.0186528 8.41973 -0.0537912 8.7996 0.0405012 9.15352L3.25909 21.2611C3.53047 22.2851 4.44349 23 5.47841 23H17.5214C18.554 23 19.467 22.2863 19.7407 21.2599L22.9593 9.15234C23.0536 8.79842 22.9823 8.41855 22.7638 8.12597C22.5442 7.83576 22.2073 7.66352 21.8485 7.66352H20.2156L15.9472 0L13.9509 1.17029L17.5674 7.66352H5.43126L9.04772 1.17029L7.05148 0ZM13.7991 12.3824H16.099V18.2811H13.7991V12.3824ZM6.8997 12.3824H9.19951V18.2811H6.8997V12.3824Z"/>
-                </svg>
-                <span class="w-28">Корзина (<span>2</span>)</span>
-            </a>
-            <!--modal-->
-            <div class="basket-mod">
-                <div class="basket-item-mod">
-                    <img src="img/basket-img.png" alt="">
-                    <div class="basket-info-mod">
-                        <p class="basket-info-name-mod">Кольцо «Классик»<span>с агатом и фианитами</span></p>
-                        <p class="basket-info-code-mod">Артикул:<span> 000000000000</span></p>
-                    </div>
-                    <div class="basket-col-mod">
-                        <div>
-                            <a href="#" class="plus">+</a>
-                            <p class="number">1</p>
-                            <a href="#" class="minus">-</a>
+            <div id="basketTop" class="relative ">
+                <a href="#" class="btn-basket w-48">
+                    <svg class="mr-3" width="23" height="23" viewBox="0 0 23 23" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.05148 0L2.78303 7.66352H1.15016C0.79139 7.66352 0.454467 7.83576 0.235985 8.12715C0.0186528 8.41973 -0.0537912 8.7996 0.0405012 9.15352L3.25909 21.2611C3.53047 22.2851 4.44349 23 5.47841 23H17.5214C18.554 23 19.467 22.2863 19.7407 21.2599L22.9593 9.15234C23.0536 8.79842 22.9823 8.41855 22.7638 8.12597C22.5442 7.83576 22.2073 7.66352 21.8485 7.66352H20.2156L15.9472 0L13.9509 1.17029L17.5674 7.66352H5.43126L9.04772 1.17029L7.05148 0ZM13.7991 12.3824H16.099V18.2811H13.7991V12.3824ZM6.8997 12.3824H9.19951V18.2811H6.8997V12.3824Z"/>
+                    </svg>
+                    <span class="w-28">Корзина (<span>2</span>)</span>
+                </a>
+
+                <!--modal-->
+                <div id="basketModal"
+                     class="absolute top-11 right-0 p-4 border-t-4 rounded border-red bg-white z-30 w-max shadow">
+                    <div class="flex items-center justify-between mb-2 border-b border-gray-light pb-4 mb-4">
+                        <img src="/img/img-01.jpg" alt="Кольцо «Венок»"
+                             class="w-16 h-16 rounded border border-gray-light object-cover">
+                        <div class="mx-5 flex-shrink-0 w-1/2">
+                            <a href="#" class="block mb-1 transition hover:text-red">
+                                <p class="text-sm font-medium">Кольцо «Венок»</p>
+                                <p class="text-xs">с агатом, жемчугом и марказитами</p>
+                            </a>
+                            <p class="text-gray text-xs">Артикул: К-0195-5</p>
                         </div>
-                        <p class="basket-price-mod">1940 ₽</p>
-                    </div>
-                </div>
-
-                <div class="basket-item-mod">
-                    <img src="img/basket-img.png" alt="">
-                    <div class="basket-info-mod">
-                        <p class="basket-info-name-mod">Кольцо «Классик»<span>с агатом и фианитами</span></p>
-                        <p class="basket-info-code-mod">Артикул:<span> 000000000000</span></p>
-                    </div>
-                    <div class="basket-col-mod">
                         <div>
-                            <a href="#" class="plus">+</a>
-                            <p class="number">1</p>
-                            <a href="#" class="minus">-</a>
+                            <div class="flex text-sm mb-3">
+                                <div class="quantity-controls quantity-minus cursor-pointer px-3">–</div>
+                                <input type="text"
+                                       class="quantity-input bg-gray-light text-center" size="1"
+                                       maxlength="4" name="quantity[0]" value="1" data-quantity="1" step="1" min="1">
+                                <div class="quantity-controls quantity-plus cursor-pointer px-3">+</div>
+                            </div>
+                            <p class="font-medium text-center">1940 ₽</p>
                         </div>
-                        <p class="basket-price-mod">1940 ₽</p>
+                    </div>
+                    <div class="flex items-center justify-between mb-2 border-b border-gray-light pb-4 mb-4">
+                        <img src="/img/img-03.jpg" alt="Кольцо «Капель»"
+                             class="w-16 h-16 rounded border border-gray-light object-cover">
+                        <div class="mx-5 flex-shrink-0 w-1/2">
+                            <a href="#" class="block mb-1 transition hover:text-red">
+                                <p class="text-sm font-medium">Кольцо «Капель»</p>
+                                <p class="text-xs">с султанитом и марказитами</p>
+                            </a>
+                            <p class="text-gray text-xs">Артикул: ТАСН.351ТНN</p>
+                        </div>
+                        <div>
+                            <div class="flex text-sm mb-3">
+                                <div class="quantity-controls quantity-minus cursor-pointer px-3">–</div>
+                                <input type="text"
+                                       class="quantity-input bg-gray-light text-center" size="1"
+                                       maxlength="4" name="quantity[0]" value="1" data-quantity="1" step="1" min="1">
+                                <div class="quantity-controls quantity-plus cursor-pointer px-3">+</div>
+                            </div>
+                            <p class="font-medium text-center">3920 ₽</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between ">
+                        <a href="#" class="btn-red">Перейти в корзину</a>
+                        <div class="text-right">
+                            <p class="text-sm">Итого:</p>
+                            <p class="text-red font-medium">5860 ₽</p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="flex justify-between mb-7">
-                    <a href="" class="flex w-3/5 h-12 items-center justify-center bg-red rounded text-white duration-300 hover:bg-red-light">Перейти в корзину</a>
-
-                    <p class="text-right text-sm">Итого:<span class="block mt-2 text-red font-medium text-base">3880 ₽</span></p>
-                </div>
             </div>
         </div>
     </div>
 </div>
-<nav class="bg-white sticky top-0 bg-opacity-80 z-40">
+<nav class="bg-white sticky top-0 bg-opacity-80 z-20">
     <div class="max-w-6xl mx-auto">
         <div class="flex justify-between">
             <a href="#" class="text-lg uppercase py-4 transition hover:text-red">Кольца</a>
@@ -160,66 +176,75 @@
 </nav>
 <main class="max-w-6xl mx-auto mb-16">
     <div class="w-full flex items-center mb-9 mt-6">
-        <a href="" class="text-red-700">Главная</a>
+        <a href="#" class="text-red hover:text-red-light">Главная</a>
         <p class="mx-1 text-red-700">/</p>
-        <p class="">Корзина покупателя</p>
+        <p>Корзина покупателя</p>
     </div>
     <div class="flex justify-between items-end mb-5">
         <p class="text-red font-bold text-4xl">Корзина</p>
-        <a href="" class="text-red">Продолжить покупки</a>
+        <a href="#" class="text-red hover:text-red-light">Продолжить покупки</a>
     </div>
 
-    <table class="table-basket w-full border-b border-gray-200 mb-3">
-        <tbody class="w-full">
-        <tr class="tr-title">
-            <th class="w-3/12">Наименование</th>
-            <th class="w-2/12">Артикул</th>
-            <th class="w-2/12">Количество</th>
-            <th class="w-1/12">Цена</th>
-            <th class="w-1/12">Скидка</th>
-            <th class="w-1/12">Итого</th>
-            <th class="w-1/12">Отложить</th>
-            <th class="w-1/12">Удалить</th>
-        </tr>
+    <table class="w-full">
+        <thead>
         <tr>
-            <td class="w-3/12">
-                <img src="img/table-img.png" alt="table-img">
-                <div class="">
-                    <p class="table-name">Кольцо «Классик»</p>
-                    <p class="table-text">с агатом и фианитами</p>
-                    <p class="table-size">Размер: 16</p>
-                </div>
-            </td>
-            <td class="w-2/12">
-                <p class="code">РОКС.1112002АГ90</p>
-            </td>
-            <td class="w-2/12 table-col">
-                <a href="" class="col-link">+</a>
-                <p class="col-number">1</p>
-                <a href="" class="col-link">-</a>
-            </td>
-            <td class="w-1/12 table-col-price">
-                <p class="table-price">1 940 ₽</p>
-            </td>
-            <td class="w-1/12 table-col-price">
-                <p class="tile-sale">0 ₽</p>
-            </td>
-            <td class="w-1/12 table-col-price">
-                <p class="table-last-price">1 940 ₽</p>
-            </td>
-            <td class="w-1/12 table-col-price">
-                <a href="" class="table-like">
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="0.5" y="0.5" width="39" height="39" rx="4.5" stroke="#C4C4C4"/>
-                        <path d="M28.4055 20.4145L28.4054 20.4144L28.3973 20.4236L19.6667 30.2473L10.9361 20.4236L10.9362 20.4235L10.9273 20.414C10.0476 19.4745 9.5 18.1674 9.5 16.7147C9.5 15.2623 10.0473 13.9577 10.9278 13.0149L10.9282 13.0144C11.8052 12.0727 13.0082 11.5001 14.3329 11.5C14.3331 11.5 14.3335 11.5 14.334 11.5L14.348 11.5004C14.3622 11.5008 14.3859 11.5018 14.4185 11.5041C14.4838 11.5085 14.5847 11.518 14.7161 11.5378C14.9789 11.5775 15.3634 11.6588 15.8297 11.8249C16.7599 12.1563 18.0235 12.8282 19.3011 14.1971L19.6667 14.5887L20.0322 14.1971C21.3098 12.8282 22.5734 12.1563 23.5036 11.8249C23.9699 11.6588 24.3544 11.5775 24.6173 11.5378C24.7487 11.518 24.8495 11.5085 24.9148 11.5041C24.9475 11.5018 24.9712 11.5008 24.9853 11.5004L24.9993 11.5C24.9998 11.5 25.0002 11.5 25.0005 11.5C26.3245 11.5001 27.528 12.0751 28.4055 13.0149L28.4056 13.0149C29.2859 13.9576 29.8333 15.265 29.8333 16.7147C29.8333 18.1642 29.2834 19.4744 28.4055 20.4145Z"
-                              stroke="#C4C4C4"/>
-                    </svg>
+            <th></th>
+            <th class="text-left pl-0">Наименование</th>
+            <th>Артикул</th>
+            <th>Количество</th>
+            <th>Цена</th>
+            <th>Скидка</th>
+            <th>Итого</th>
+            <th>Отложить</th>
+            <th>Удалить</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>
+                <a href="#" class="block mr-4 w-16 h-16 flex-shrink-0" title="Кольцо «Классик»">
+                    <img class="w-full h-full rounded border border-gray-light object-cover" src="img/img-01.jpg"
+                         alt="Кольцо «Классик»" width="64" height="64">
                 </a>
             </td>
-            <td class="w-1/12 table-col-price">
-                <a href="" class="table-del">
+            <td class="text-left pl-0">
+                <a href="#" class="block mb-1 transition hover:text-red" title="Кольцо «Классик»">
+                    <p class="font-medium">Кольцо «Венок»</p>
+                    <p class="text-sm font-light">с агатом, жемчугом и марказитами</p>
+                </a>
+                <p class="text-sm">Размер: 16</p>
+            </td>
+            <td>
+                <p class="text-sm uppercase text-center">РОКС.1112002АГ90</p>
+            </td>
+            <td>
+                <div class="flex justify-center">
+                    <div class="quantity-controls quantity-minus cursor-pointer block w-8 h-8 leading-8 text-center bg-gray-light font-medium text-xl">–</div>
+                    <input type="text"
+                           class="quantity-input block w-10 h-8 leading-8 text-center" size="1"
+                           maxlength="4" name="quantity[0]" value="1" data-quantity="1" step="1" min="1">
+                    <div class="quantity-controls quantity-plus cursor-pointer block w-8 h-8 leading-8 text-center bg-gray-light font-medium text-xl">+</div>
+                </div>
+            </td>
+            <td>
+                <p>1&nbsp;940&nbsp;₽</p>
+            </td>
+            <td>
+                <p>0&nbsp;₽</p>
+            </td>
+            <td>
+                <p class="font-medium">1&nbsp;940&nbsp;₽</p>
+            </td>
+            <td>
+                <button class="btn-like h-10 w-10 mx-auto" aria-label="Добавить в избранное">
+                    <svg width="22" height="20" viewBox="0 0 22 20" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.0287 9.40894L20.0286 9.40883L20.0202 9.41793L11 19.26L1.97977 9.41793L1.9799 9.41782L1.97085 9.40844C1.06267 8.46794 0.5 7.16263 0.5 5.71468C0.5 4.26711 1.06242 2.9642 1.97131 2.02044L1.97179 2.01994C2.87739 1.07699 4.12377 0.5 5.5 0.500003L5.49997 0.5L5.4994 0.499998L5.49971 0.500001C5.5 0.500003 5.50048 0.500008 5.50116 0.500018L5.51612 0.50037C5.53108 0.50083 5.55591 0.501854 5.58995 0.504126C5.65804 0.508672 5.76287 0.518205 5.89923 0.538176C6.17201 0.578127 6.57033 0.659757 7.05291 0.826467C8.01598 1.15916 9.32127 1.83284 10.6398 3.20269L11 3.57696L11.3602 3.20269C12.6787 1.83284 13.984 1.15916 14.9471 0.826467C15.4297 0.659757 15.828 0.578127 16.1008 0.538176C16.2371 0.518205 16.342 0.508672 16.41 0.504126C16.4441 0.501854 16.4689 0.50083 16.4839 0.50037L16.4988 0.500018C16.4996 0.500008 16.5001 0.500003 16.5004 0.5C17.8759 0.5001 19.1225 1.07945 20.0287 2.02043L20.0287 2.02044C20.9375 2.96411 21.5 4.26976 21.5 5.71468C21.5 7.15941 20.9349 8.4679 20.0287 9.40894Z"/>
+                    </svg>
+                </button>
+            </td>
+            <td>
+                <button class="btn-del h-10 w-10 mx-auto">
                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="0.5" y="0.5" width="39" height="39" rx="4.5" stroke="#333333"/>
                         <path d="M13.078 31.5L10.4897 15.5H29.4816L26.8934 31.5H13.078Z" stroke="#333333"/>
                         <rect x="9" y="12" width="22" height="2" fill="#333333"/>
                         <rect x="16" y="10" width="9" height="2" fill="#333333"/>
@@ -229,48 +254,53 @@
                         <line x1="12" y1="25.5" x2="28" y2="25.5" stroke="#333333"/>
                         <line x1="13" y1="28.5" x2="27" y2="28.5" stroke="#333333"/>
                     </svg>
-                </a>
+                </button>
             </td>
         </tr>
         <tr>
-            <td class="w-3/12">
-                <img src="img/table-img.png" alt="table-img">
-                <div class="">
-                    <p class="table-name">Кольцо «Классик»</p>
-                    <p class="table-text">с агатом и фианитами</p>
-                    <p class="table-size">Размер: 16</p>
-                </div>
-            </td>
-            <td class="w-2/12">
-                <p class="code">РОКС.1112002АГ90</p>
-            </td>
-            <td class="w-2/12 table-col">
-                <a href="" class="col-link">+</a>
-                <p class="col-number">1</p>
-                <a href="" class="col-link">-</a>
-            </td>
-            <td class="w-1/12 table-col-price">
-                <p class="table-price">1 940 ₽</p>
-            </td>
-            <td class="w-1/12 table-col-price">
-                <p class="tile-sale">0 ₽</p>
-            </td>
-            <td class="w-1/12 table-col-price">
-                <p class="table-last-price">1 940 ₽</p>
-            </td>
-            <td class="w-1/12 table-col-price">
-                <a href="" class="table-like">
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="0.5" y="0.5" width="39" height="39" rx="4.5" stroke="#C4C4C4"/>
-                        <path d="M28.4055 20.4145L28.4054 20.4144L28.3973 20.4236L19.6667 30.2473L10.9361 20.4236L10.9362 20.4235L10.9273 20.414C10.0476 19.4745 9.5 18.1674 9.5 16.7147C9.5 15.2623 10.0473 13.9577 10.9278 13.0149L10.9282 13.0144C11.8052 12.0727 13.0082 11.5001 14.3329 11.5C14.3331 11.5 14.3335 11.5 14.334 11.5L14.348 11.5004C14.3622 11.5008 14.3859 11.5018 14.4185 11.5041C14.4838 11.5085 14.5847 11.518 14.7161 11.5378C14.9789 11.5775 15.3634 11.6588 15.8297 11.8249C16.7599 12.1563 18.0235 12.8282 19.3011 14.1971L19.6667 14.5887L20.0322 14.1971C21.3098 12.8282 22.5734 12.1563 23.5036 11.8249C23.9699 11.6588 24.3544 11.5775 24.6173 11.5378C24.7487 11.518 24.8495 11.5085 24.9148 11.5041C24.9475 11.5018 24.9712 11.5008 24.9853 11.5004L24.9993 11.5C24.9998 11.5 25.0002 11.5 25.0005 11.5C26.3245 11.5001 27.528 12.0751 28.4055 13.0149L28.4056 13.0149C29.2859 13.9576 29.8333 15.265 29.8333 16.7147C29.8333 18.1642 29.2834 19.4744 28.4055 20.4145Z"
-                              stroke="#C4C4C4"/>
-                    </svg>
+            <td>
+                <a href="#" class="block mr-4 w-16 h-16 flex-shrink-0" title="Серьги с синтетическим аметистом и фианитами">
+                    <img class="w-full h-full rounded border border-gray-light object-cover" src="img/img-02.jpg"
+                         alt="Серьги с синтетическим аметистом и фианитами" width="64" height="64">
                 </a>
             </td>
-            <td class="w-1/12 table-col-price">
-                <a href="" class="table-del">
+            <td class="text-left pl-0">
+                <a href="#" class="block mb-1 transition hover:text-red" title="Серьги с синтетическим аметистом и фианитами">
+                    <p class="font-medium">Серьги</p>
+                    <p class="text-sm font-light">с синтетическим аметистом и фианитами</p>
+                </a>
+            </td>
+            <td>
+                <p class="text-sm uppercase text-center">РОКС.1112002АГ90</p>
+            </td>
+            <td>
+                <div class="flex justify-center">
+                    <div class="quantity-controls quantity-minus cursor-pointer block w-8 h-8 leading-8 text-center bg-gray-light font-medium text-xl">–</div>
+                    <input type="text"
+                           class="quantity-input block w-10 h-8 leading-8 text-center" size="1"
+                           maxlength="4" name="quantity[0]" value="1" data-quantity="1" step="1" min="1">
+                    <div class="quantity-controls quantity-plus cursor-pointer block w-8 h-8 leading-8 text-center bg-gray-light font-medium text-xl">+</div>
+                </div>
+            </td>
+            <td>
+                <p>1&nbsp;940&nbsp;₽</p>
+            </td>
+            <td>
+                <p class="font-medium text-red">950&nbsp;₽</p>
+            </td>
+            <td>
+                <p class="font-medium">990&nbsp;₽</p>
+            </td>
+            <td>
+                <button class="btn-like active h-10 w-10 mx-auto" aria-label="Добавить в избранное">
+                    <svg width="22" height="20" viewBox="0 0 22 20" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.0287 9.40894L20.0286 9.40883L20.0202 9.41793L11 19.26L1.97977 9.41793L1.9799 9.41782L1.97085 9.40844C1.06267 8.46794 0.5 7.16263 0.5 5.71468C0.5 4.26711 1.06242 2.9642 1.97131 2.02044L1.97179 2.01994C2.87739 1.07699 4.12377 0.5 5.5 0.500003L5.49997 0.5L5.4994 0.499998L5.49971 0.500001C5.5 0.500003 5.50048 0.500008 5.50116 0.500018L5.51612 0.50037C5.53108 0.50083 5.55591 0.501854 5.58995 0.504126C5.65804 0.508672 5.76287 0.518205 5.89923 0.538176C6.17201 0.578127 6.57033 0.659757 7.05291 0.826467C8.01598 1.15916 9.32127 1.83284 10.6398 3.20269L11 3.57696L11.3602 3.20269C12.6787 1.83284 13.984 1.15916 14.9471 0.826467C15.4297 0.659757 15.828 0.578127 16.1008 0.538176C16.2371 0.518205 16.342 0.508672 16.41 0.504126C16.4441 0.501854 16.4689 0.50083 16.4839 0.50037L16.4988 0.500018C16.4996 0.500008 16.5001 0.500003 16.5004 0.5C17.8759 0.5001 19.1225 1.07945 20.0287 2.02043L20.0287 2.02044C20.9375 2.96411 21.5 4.26976 21.5 5.71468C21.5 7.15941 20.9349 8.4679 20.0287 9.40894Z"/>
+                    </svg>
+                </button>
+            </td>
+            <td>
+                <button class="btn-del h-10 w-10 mx-auto">
                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="0.5" y="0.5" width="39" height="39" rx="4.5" stroke="#333333"/>
                         <path d="M13.078 31.5L10.4897 15.5H29.4816L26.8934 31.5H13.078Z" stroke="#333333"/>
                         <rect x="9" y="12" width="22" height="2" fill="#333333"/>
                         <rect x="16" y="10" width="9" height="2" fill="#333333"/>
@@ -280,48 +310,54 @@
                         <line x1="12" y1="25.5" x2="28" y2="25.5" stroke="#333333"/>
                         <line x1="13" y1="28.5" x2="27" y2="28.5" stroke="#333333"/>
                     </svg>
-                </a>
+                </button>
             </td>
         </tr>
         <tr>
-            <td class="w-3/12">
-                <img src="img/table-img.png" alt="table-img">
-                <div class="">
-                    <p class="table-name">Кольцо «Классик»</p>
-                    <p class="table-text">с агатом и фианитами</p>
-                    <p class="table-size">Размер: 16</p>
-                </div>
-            </td>
-            <td class="w-2/12">
-                <p class="code">РОКС.1112002АГ90</p>
-            </td>
-            <td class="w-2/12 table-col">
-                <a href="" class="col-link">+</a>
-                <p class="col-number">1</p>
-                <a href="" class="col-link">-</a>
-            </td>
-            <td class="w-1/12 table-col-price">
-                <p class="table-price">1 940 ₽</p>
-            </td>
-            <td class="w-1/12 table-col-price">
-                <p class="tile-sale">0 ₽</p>
-            </td>
-            <td class="w-1/12 table-col-price">
-                <p class="table-last-price">1 940 ₽</p>
-            </td>
-            <td class="w-1/12 table-col-price">
-                <a href="" class="table-like">
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="0.5" y="0.5" width="39" height="39" rx="4.5" stroke="#C4C4C4"/>
-                        <path d="M28.4055 20.4145L28.4054 20.4144L28.3973 20.4236L19.6667 30.2473L10.9361 20.4236L10.9362 20.4235L10.9273 20.414C10.0476 19.4745 9.5 18.1674 9.5 16.7147C9.5 15.2623 10.0473 13.9577 10.9278 13.0149L10.9282 13.0144C11.8052 12.0727 13.0082 11.5001 14.3329 11.5C14.3331 11.5 14.3335 11.5 14.334 11.5L14.348 11.5004C14.3622 11.5008 14.3859 11.5018 14.4185 11.5041C14.4838 11.5085 14.5847 11.518 14.7161 11.5378C14.9789 11.5775 15.3634 11.6588 15.8297 11.8249C16.7599 12.1563 18.0235 12.8282 19.3011 14.1971L19.6667 14.5887L20.0322 14.1971C21.3098 12.8282 22.5734 12.1563 23.5036 11.8249C23.9699 11.6588 24.3544 11.5775 24.6173 11.5378C24.7487 11.518 24.8495 11.5085 24.9148 11.5041C24.9475 11.5018 24.9712 11.5008 24.9853 11.5004L24.9993 11.5C24.9998 11.5 25.0002 11.5 25.0005 11.5C26.3245 11.5001 27.528 12.0751 28.4055 13.0149L28.4056 13.0149C29.2859 13.9576 29.8333 15.265 29.8333 16.7147C29.8333 18.1642 29.2834 19.4744 28.4055 20.4145Z"
-                              stroke="#C4C4C4"/>
-                    </svg>
+            <td>
+                <a href="#" class="block mr-4 w-16 h-16 flex-shrink-0" title="Кольцо «Классик»">
+                    <img class="w-full h-full rounded border border-gray-light object-cover" src="img/img-01.jpg"
+                         alt="Кольцо «Классик»" width="64" height="64">
                 </a>
             </td>
-            <td class="w-1/12 table-col-price">
-                <a href="" class="table-del">
+            <td class="text-left pl-0">
+                <a href="#" class="block mb-1 transition hover:text-red" title="Кольцо «Классик»">
+                    <p class="font-medium">Кольцо «Венок»</p>
+                    <p class="text-sm font-light">с агатом, жемчугом и марказитами</p>
+                </a>
+                <p class="text-sm">Размер: 16</p>
+            </td>
+            <td>
+                <p class="text-sm uppercase text-center">РОКС.1112002АГ90</p>
+            </td>
+            <td>
+                <div class="flex justify-center">
+                    <div class="quantity-controls quantity-minus cursor-pointer block w-8 h-8 leading-8 text-center bg-gray-light font-medium text-xl">–</div>
+                    <input type="text"
+                           class="quantity-input block w-10 h-8 leading-8 text-center" size="1"
+                           maxlength="4" name="quantity[0]" value="1" data-quantity="1" step="1" min="1">
+                    <div class="quantity-controls quantity-plus cursor-pointer block w-8 h-8 leading-8 text-center bg-gray-light font-medium text-xl">+</div>
+                </div>
+            </td>
+            <td>
+                <p>1&nbsp;940&nbsp;₽</p>
+            </td>
+            <td>
+                <p>0&nbsp;₽</p>
+            </td>
+            <td>
+                <p class="font-medium">1&nbsp;940&nbsp;₽</p>
+            </td>
+            <td>
+                <button class="btn-like h-10 w-10 mx-auto" aria-label="Добавить в избранное">
+                    <svg width="22" height="20" viewBox="0 0 22 20" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.0287 9.40894L20.0286 9.40883L20.0202 9.41793L11 19.26L1.97977 9.41793L1.9799 9.41782L1.97085 9.40844C1.06267 8.46794 0.5 7.16263 0.5 5.71468C0.5 4.26711 1.06242 2.9642 1.97131 2.02044L1.97179 2.01994C2.87739 1.07699 4.12377 0.5 5.5 0.500003L5.49997 0.5L5.4994 0.499998L5.49971 0.500001C5.5 0.500003 5.50048 0.500008 5.50116 0.500018L5.51612 0.50037C5.53108 0.50083 5.55591 0.501854 5.58995 0.504126C5.65804 0.508672 5.76287 0.518205 5.89923 0.538176C6.17201 0.578127 6.57033 0.659757 7.05291 0.826467C8.01598 1.15916 9.32127 1.83284 10.6398 3.20269L11 3.57696L11.3602 3.20269C12.6787 1.83284 13.984 1.15916 14.9471 0.826467C15.4297 0.659757 15.828 0.578127 16.1008 0.538176C16.2371 0.518205 16.342 0.508672 16.41 0.504126C16.4441 0.501854 16.4689 0.50083 16.4839 0.50037L16.4988 0.500018C16.4996 0.500008 16.5001 0.500003 16.5004 0.5C17.8759 0.5001 19.1225 1.07945 20.0287 2.02043L20.0287 2.02044C20.9375 2.96411 21.5 4.26976 21.5 5.71468C21.5 7.15941 20.9349 8.4679 20.0287 9.40894Z"/>
+                    </svg>
+                </button>
+            </td>
+            <td>
+                <button class="btn-del h-10 w-10 mx-auto">
                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="0.5" y="0.5" width="39" height="39" rx="4.5" stroke="#333333"/>
                         <path d="M13.078 31.5L10.4897 15.5H29.4816L26.8934 31.5H13.078Z" stroke="#333333"/>
                         <rect x="9" y="12" width="22" height="2" fill="#333333"/>
                         <rect x="16" y="10" width="9" height="2" fill="#333333"/>
@@ -331,48 +367,53 @@
                         <line x1="12" y1="25.5" x2="28" y2="25.5" stroke="#333333"/>
                         <line x1="13" y1="28.5" x2="27" y2="28.5" stroke="#333333"/>
                     </svg>
-                </a>
+                </button>
             </td>
         </tr>
         <tr>
-            <td class="w-3/12">
-                <img src="img/table-img.png" alt="table-img">
-                <div class="">
-                    <p class="table-name">Кольцо «Классик»</p>
-                    <p class="table-text">с агатом и фианитами</p>
-                    <p class="table-size">Размер: 16</p>
-                </div>
-            </td>
-            <td class="w-2/12">
-                <p class="code">РОКС.1112002АГ90</p>
-            </td>
-            <td class="w-2/12 table-col">
-                <a href="" class="col-link">+</a>
-                <p class="col-number">1</p>
-                <a href="" class="col-link">-</a>
-            </td>
-            <td class="w-1/12 table-col-price">
-                <p class="table-price">1 940 ₽</p>
-            </td>
-            <td class="w-1/12 table-col-price">
-                <p class="tile-sale">0 ₽</p>
-            </td>
-            <td class="w-1/12 table-col-price">
-                <p class="table-last-price">1 940 ₽</p>
-            </td>
-            <td class="w-1/12 table-col-price">
-                <a href="" class="table-like">
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="0.5" y="0.5" width="39" height="39" rx="4.5" stroke="#C4C4C4"/>
-                        <path d="M28.4055 20.4145L28.4054 20.4144L28.3973 20.4236L19.6667 30.2473L10.9361 20.4236L10.9362 20.4235L10.9273 20.414C10.0476 19.4745 9.5 18.1674 9.5 16.7147C9.5 15.2623 10.0473 13.9577 10.9278 13.0149L10.9282 13.0144C11.8052 12.0727 13.0082 11.5001 14.3329 11.5C14.3331 11.5 14.3335 11.5 14.334 11.5L14.348 11.5004C14.3622 11.5008 14.3859 11.5018 14.4185 11.5041C14.4838 11.5085 14.5847 11.518 14.7161 11.5378C14.9789 11.5775 15.3634 11.6588 15.8297 11.8249C16.7599 12.1563 18.0235 12.8282 19.3011 14.1971L19.6667 14.5887L20.0322 14.1971C21.3098 12.8282 22.5734 12.1563 23.5036 11.8249C23.9699 11.6588 24.3544 11.5775 24.6173 11.5378C24.7487 11.518 24.8495 11.5085 24.9148 11.5041C24.9475 11.5018 24.9712 11.5008 24.9853 11.5004L24.9993 11.5C24.9998 11.5 25.0002 11.5 25.0005 11.5C26.3245 11.5001 27.528 12.0751 28.4055 13.0149L28.4056 13.0149C29.2859 13.9576 29.8333 15.265 29.8333 16.7147C29.8333 18.1642 29.2834 19.4744 28.4055 20.4145Z"
-                              stroke="#C4C4C4"/>
-                    </svg>
+            <td>
+                <a href="#" class="block mr-4 w-16 h-16 flex-shrink-0" title="Серьги с синтетическим аметистом и фианитами">
+                    <img class="w-full h-full rounded border border-gray-light object-cover" src="img/img-02.jpg"
+                         alt="Серьги с синтетическим аметистом и фианитами" width="64" height="64">
                 </a>
             </td>
-            <td class="w-1/12 table-col-price">
-                <a href="" class="table-del">
+            <td class="text-left pl-0">
+                <a href="#" class="block mb-1 transition hover:text-red" title="Серьги с синтетическим аметистом и фианитами">
+                    <p class="font-medium">Серьги</p>
+                    <p class="text-sm font-light">с синтетическим аметистом и фианитами</p>
+                </a>
+            </td>
+            <td>
+                <p class="text-sm uppercase text-center">РОКС.1112002АГ90</p>
+            </td>
+            <td>
+                <div class="flex justify-center">
+                    <div class="quantity-controls quantity-minus cursor-pointer block w-8 h-8 leading-8 text-center bg-gray-light font-medium text-xl">–</div>
+                    <input type="text"
+                           class="quantity-input block w-10 h-8 leading-8 text-center" size="1"
+                           maxlength="4" name="quantity[0]" value="1" data-quantity="1" step="1" min="1">
+                    <div class="quantity-controls quantity-plus cursor-pointer block w-8 h-8 leading-8 text-center bg-gray-light font-medium text-xl">+</div>
+                </div>
+            </td>
+            <td>
+                <p>1&nbsp;940&nbsp;₽</p>
+            </td>
+            <td>
+                <p class="font-medium text-red">950&nbsp;₽</p>
+            </td>
+            <td>
+                <p class="font-medium">990&nbsp;₽</p>
+            </td>
+            <td>
+                <button class="btn-like active h-10 w-10 mx-auto" aria-label="Добавить в избранное">
+                    <svg width="22" height="20" viewBox="0 0 22 20" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.0287 9.40894L20.0286 9.40883L20.0202 9.41793L11 19.26L1.97977 9.41793L1.9799 9.41782L1.97085 9.40844C1.06267 8.46794 0.5 7.16263 0.5 5.71468C0.5 4.26711 1.06242 2.9642 1.97131 2.02044L1.97179 2.01994C2.87739 1.07699 4.12377 0.5 5.5 0.500003L5.49997 0.5L5.4994 0.499998L5.49971 0.500001C5.5 0.500003 5.50048 0.500008 5.50116 0.500018L5.51612 0.50037C5.53108 0.50083 5.55591 0.501854 5.58995 0.504126C5.65804 0.508672 5.76287 0.518205 5.89923 0.538176C6.17201 0.578127 6.57033 0.659757 7.05291 0.826467C8.01598 1.15916 9.32127 1.83284 10.6398 3.20269L11 3.57696L11.3602 3.20269C12.6787 1.83284 13.984 1.15916 14.9471 0.826467C15.4297 0.659757 15.828 0.578127 16.1008 0.538176C16.2371 0.518205 16.342 0.508672 16.41 0.504126C16.4441 0.501854 16.4689 0.50083 16.4839 0.50037L16.4988 0.500018C16.4996 0.500008 16.5001 0.500003 16.5004 0.5C17.8759 0.5001 19.1225 1.07945 20.0287 2.02043L20.0287 2.02044C20.9375 2.96411 21.5 4.26976 21.5 5.71468C21.5 7.15941 20.9349 8.4679 20.0287 9.40894Z"/>
+                    </svg>
+                </button>
+            </td>
+            <td>
+                <button class="btn-del h-10 w-10 mx-auto">
                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="0.5" y="0.5" width="39" height="39" rx="4.5" stroke="#333333"/>
                         <path d="M13.078 31.5L10.4897 15.5H29.4816L26.8934 31.5H13.078Z" stroke="#333333"/>
                         <rect x="9" y="12" width="22" height="2" fill="#333333"/>
                         <rect x="16" y="10" width="9" height="2" fill="#333333"/>
@@ -382,103 +423,92 @@
                         <line x1="12" y1="25.5" x2="28" y2="25.5" stroke="#333333"/>
                         <line x1="13" y1="28.5" x2="27" y2="28.5" stroke="#333333"/>
                     </svg>
-                </a>
+                </button>
             </td>
         </tr>
         </tbody>
     </table>
-
-    <div class="flex pb-2 border-b border-gray-200 mb-7">
-        <div class="w-2/4 border-r border-gray-200 mb-2 pr-4">
+    <div class="flex py-3 border-b border-gray mb-3">
+        <div class="w-1/2 py-5 border-r border-gray pr-4">
             <p class="font-bold text-red text-xl mb-1">Быстрый заказ (для России)</p>
             <p class="">Способы доставки и оплаты с Вами согласует наш оператор по телефону.</p>
         </div>
-        <div class="w-2/4 px-5">
+        <div class="w-1/2 p-5">
             <div class="flex justify-end">
                 <p class="font-bold text-xl mb-1 mr-6">Стоимость доставки:</p>
-                <p class="w-3/12 text-right font-bold text-xl mb-1">1 000 ₽</p>
+                <p class="w-1/4 text-right font-bold text-xl mb-1">1 000 ₽</p>
             </div>
             <div class="flex justify-end">
-                <p class=" mr-6">До бесплатной доставки в заказе не хватает</p>
-                <p class="w-3/12 text-right">2 000 ₽</p>
+                <p class="mr-6">До бесплатной доставки в заказе не хватает</p>
+                <p class="w-1/4 text-right">2 000 ₽</p>
             </div>
         </div>
     </div>
-    <p class="font-bold text-red text-xl ml-auto w-max mb-16 mr-5">Итого:<span
-            class="ml-10 text-red text-xl">17 080 ₽</span></p>
+    <div class="flex justify-end mb-10">
+        <div class="w-1/2 p-5 flex justify-end text-right ">
+            <p class="font-bold text-red text-xl mr-6">Итого:</p>
+            <p class="w-1/4 text-right font-bold text-red text-xl">17 080 ₽</p>
+        </div>
+    </div>
 
     <form action="#" class="flex justify-between">
-        <div class="w-2/4 border mr-3 rounded overflow-hidden">
+        <div class="w-2/4 border mr-3 rounded">
             <p class="bg-red py-3 text-center mb-7 text-white text-2xl font-bold">Доставка</p>
 
             <div class=" pl-16 pb-12 pr-4">
-                <label class="basket-input">
-                    <input type="radio" name="basket">
-                    <span class="basket-inp-visible"><span></span></span>
-                    <span class="basket-text-block">
-                    <span class="basket-inp-title">Быстрый заказ (для России)</span>
-                    <span class="basket-inp-text">Способы доставки и оплаты с Вами согласует наш оператор по телефону.</span>
-                    <span class="basket-inp-price"></span>
-                </span>
+
+                <input type="radio" name="rb" id="rb1">
+                <label class="mb-8" for="rb1">
+                    <span class="block font-medium mb-3 block">Быстрый заказ (для России)</span>
+                    <span class="block font-light mb-3 block">Способы доставки и оплаты с Вами согласует наш оператор по телефону.</span>
                 </label>
 
-                <label class="basket-input">
-                    <input type="radio" name="basket">
-                    <span class="basket-inp-visible"><span></span></span>
-                    <span class="basket-text-block">
-                    <span class="basket-inp-title">Курьерская доставка по Москве и Санкт-Петербургу</span>
-                    <span class="basket-inp-text">1-2 дня. Бесплатно при заказе от 3500 руб.<br> Возможен частичный выкуп заказа.<br> Оплата: курьеру наличными или картой.</span>
-                    <span class="basket-inp-price">Стоимость: 300 ₽</span>
-                </span>
+                <input type="radio" name="rb" id="rb2">
+                <label class="mb-8" for="rb2">
+                    <span class="block font-medium mb-3">Курьерская доставка по Москве и Санкт-Петербургу</span>
+                    <span class="block font-light mb-3">1-2 дня. Бесплатно при заказе от 3500 руб.<br> Возможен частичный выкуп заказа.<br> Оплата: курьеру наличными или картой.</span>
+                    <span class="block font-medium">Стоимость: 300 ₽</span>
                 </label>
 
-                <label class="basket-input">
-                    <input type="radio" name="basket">
-                    <span class="basket-inp-visible"><span></span></span>
-                    <span class="basket-text-block">
-                    <span class="basket-inp-title">Самовывоз со склада Серена-Сильвер</span>
-                    <span class="basket-inp-text">Адрес: г. Москва, ул.Москворечье, д.4, корп.6.<br> Резерв – 3 дня. Возможен частичный выкуп заказа.</span>
-                    <span class="basket-inp-price">Оплата: наличными</span>
-                </span>
+                <input type="radio" name="rb" id="rb3">
+                <label class="mb-8" for="rb3">
+                    <span class="block font-medium mb-3">Самовывоз со склада Серена-Сильвер</span>
+                    <span class="block font-light mb-3">Адрес: г. Москва, ул.Москворечье, д.4, корп.6.<br> Резерв – 3 дня. Возможен частичный выкуп заказа.</span>
+                    <span class="block font-medium">Оплата: наличными</span>
                 </label>
 
-                <label class="basket-input">
-                    <input type="radio" name="basket">
-                    <span class="basket-inp-visible"><span></span></span>
-                    <span class="basket-text-block">
-                    <span class="basket-inp-title">Доставка Почтой России посылкой 1 класса</span>
-                    <span class="basket-inp-text">От 4-х дней. Бесплатно при заказе от 4500 руб.<br>Оплата: наложенный платёж Почты России наличными или картой.</span>
-                    <span class="basket-inp-price">Стоимость: 400 ₽</span>
-                </span>
+                <input type="radio" name="rb" id="rb4">
+                <label class="mb-8" for="rb4">
+                    <span class="block font-medium mb-3">Доставка Почтой России посылкой 1 класса</span>
+                    <span class="block font-light mb-3">От 4-х дней. Бесплатно при заказе от 4500 руб.<br>Оплата: наложенный платёж Почты России наличными или картой.</span>
+                    <span class="block font-medium">Стоимость: 400 ₽</span>
                 </label>
 
-                <label class="basket-input">
-                    <input type="radio" name="basket">
-                    <span class="basket-inp-visible"><span></span></span>
-                    <span class="basket-text-block">
-                    <span class="basket-inp-title">Курьерская доставка в Казахстан</span>
-                    <span class="basket-inp-text">5-10 дней. Оплата: курьеру наличными или картой.</span>
-                    <span class="basket-inp-price">Стоимость: 650 ₽ </span>
-                </span>
+                <input type="radio" name="rb" id="rb5">
+                <label class="mb-8" for="rb5">
+                    <span class="block font-medium mb-3">Курьерская доставка в Казахстан</span>
+                    <span class="block font-light mb-3">5-10 дней. Оплата: курьеру наличными или картой.</span>
+                    <span class="block font-medium">Стоимость: 650 ₽</span>
                 </label>
 
-                <label class="basket-input">
-                    <input type="radio" name="basket">
-                    <span class="basket-inp-visible"><span></span></span>
-                    <span class="basket-text-block">
-                    <span class="basket-inp-title">Пункты самовывоза и курьерская доставка СДЭК по всей России</span>
-                    <span class="basket-inp-text">От 2-х дней. Возможен частичный выкуп заказа. Оплата: наличными или картой.</span>
-                    <span class="basket-inp-price">Стоимость: 250 ₽</span>
-                </span>
+                <input type="radio" name="rb" id="rb6">
+                <label class="mb-8" for="rb6">
+                    <span class="block font-medium mb-3">Пункты самовывоза и курьерская доставка СДЭК по всей России</span>
+                    <span class="block font-light mb-3">От 2-х дней. Возможен частичный выкуп заказа. Оплата: наличными или картой.</span>
+                    <span class="block font-medium">Стоимость: 250 ₽</span>
                 </label>
+
             </div>
         </div>
-        <div class="w-2/4 border ml-3 rounded overflow-hidden h-full">
+        <div class="w-2/4 border rounded">
             <p class="bg-red py-3 text-center mb-7 text-white text-2xl font-bold">Детали оплаты</p>
-            <div class="pb-12 px-20">
-                <input type="tel" placeholder="Телефон*" required class="h-14 w-full border rounded flex items-center px-5 mb-7">
-                <textarea class="w-full h-32 border rounded flex items-center px-5 mb-7" placeholder="Введите примечание или специальный запрос"></textarea>
-                <button class="w-full h-14 bg-red rounded text-white font-medium">Подтвердить заказ</button>
+            <div class="py-8 px-20" >
+                <input type="tel" placeholder="Телефон*" required
+                       class="w-full border border-gray rounded p-4 mb-4 focus:outline-none focus:ring-1 focus:ring-red">
+                <textarea class="w-full border border-gray rounded p-4 mb-4 focus:outline-none focus:ring-1 focus:ring-red"
+                          rows="5"
+                          placeholder="Введите примечание или специальный запрос"></textarea>
+                <button class="btn-red w-full p-4">Подтвердить заказ</button>
             </div>
         </div>
     </form>

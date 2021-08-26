@@ -20,7 +20,7 @@ var swiperComment = new Swiper("#slider-comment .swiper-container", {
 });
 
 // SLIDER PRODUCT
-var swiperComment = new Swiper("#slider-product", {
+var swiperProduct = new Swiper("#slider-product", {
     loop: true,
     slidesPerView: 3,
     spaceBetween: 20,
@@ -76,7 +76,7 @@ var swiperBig = new Swiper("#sliderBig", {
     },
 });
 
-var swiperЕцў = new Swiper(".one-block-slider", {
+var swiperTwo = new Swiper(".one-block-slider", {
     loop: true,
     slidesPerView: 1,
     spaceBetween: 20,
