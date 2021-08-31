@@ -344,4 +344,36 @@
     .price-table img {
         @apply mr-7;
     }
+
+    .info-block-parent .info-link {
+        @apply font-medium text-2xl relative;
+    }
+
+    .info-block-parent .info-link::before {
+        content: '';
+        @apply absolute top-0 left-0 -ml-10 w-7 h-7 rounded-full duration-300;
+        background: url("icons/info-block-bg.png") no-repeat 0 0 / contain;
+    }
+
+    .info-block-parent .info-link.active::before {
+        content: '';
+        @apply absolute top-0 left-0 -ml-10 w-7 h-7 rounded-full;
+        background: url("icons/info-block-bg-active.png") no-repeat 0 0 / contain;
+    }
+
+    .info-block-parent {
+        @apply mb-4 w-3/5 pl-10;
+    }
+
+    .info-block-parent .info-text {
+        @apply max-h-0 overflow-hidden duration-300;
+    }
+
+    .info-block-parent .info-text.active {
+        @apply max-h-80;
+    }
+
+    .info-block-parent .info-text p {
+        @apply mb-4;
+    }
 }
