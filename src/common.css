@@ -329,10 +329,6 @@
         @apply flex items-center;
     }
 
-    .td-1 {
-        @apply flex;
-    }
-
     .price-table p {
         @apply text-sm text-left mb-3;
     }

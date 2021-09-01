@@ -1,10 +1,14 @@
 const path = require('path');
+
 module.exports = {
-    mode: 'production',
-    entry: './src/index.js',
+    entry: {
+        js: './src/main.js',
+        css: './src/style.css',
+    },
     output: {
-        path: path.resolve(__dirname, 'dist'),
-        filename: 'bundle.js',
+        path: path.resolve(__dirname, 'dist/assets'),
+        filename: '[name].bundle.js',
+        clean: true,
     },
     module: {
         rules: [
@@ -37,10 +41,5 @@ module.exports = {
                 use: ['style-loader', 'css-loader', 'postcss-loader'],
             },
         ],
-    },
-    devServer: {
-        contentBase: path.resolve(__dirname, 'dist'),
-        watchContentBase: true,
-        port: 3000,
     },
 };
