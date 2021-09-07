@@ -1,14 +1,14 @@
 const path = require('path');
-
 module.exports = {
+    mode: 'development',
     entry: {
         js: './src/main.js',
         css: './src/style.css',
     },
     output: {
+        publicPath: '/assets/',
         path: path.resolve(__dirname, 'dist/assets/'),
         filename: '[name].bundle.js',
-        clean: true,
     },
     module: {
         rules: [
@@ -41,5 +41,12 @@ module.exports = {
                 use: ['style-loader', 'css-loader', 'postcss-loader'],
             },
         ],
+    },
+    devServer: {
+        static: 'dist',
+        liveReload: true,
+        port: 3000,
+        open:true,
+        hot:true,
     },
 };

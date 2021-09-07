@@ -341,20 +341,23 @@
         @apply mr-7;
     }
 
-    .info-block-parent .info-link {
-        @apply font-medium text-2xl relative;
+    /* ACCORDEON BLOCK */
+
+    .info-link {
+        @apply font-medium text-2xl relative cursor-pointer hover:text-red;
     }
 
-    .info-block-parent .info-link::before {
+    .info-link::before {
         content: '';
-        @apply absolute top-0 left-0 -ml-10 w-7 h-7 rounded-full duration-300;
-        background: url("icons/info-block-bg.png") no-repeat 0 0 / contain;
+        @apply block absolute top-0 left-0 -ml-10 w-7 h-7 rounded-full bg-red bg-no-repeat bg-center duration-300;
+        background-image: url("icons/icon-plus.svg");
+        background-size: 20px;
     }
 
-    .info-block-parent .info-link.active::before {
+    .info-link.active::before {
         content: '';
-        @apply absolute top-0 left-0 -ml-10 w-7 h-7 rounded-full;
-        background: url("icons/info-block-bg-active.png") no-repeat 0 0 / contain;
+        @apply bg-gray transform rotate-180;
+        background-image: url("icons/icon-minus.svg");
     }
 
     .info-block-parent {
