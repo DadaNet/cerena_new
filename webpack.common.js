@@ -6,9 +6,9 @@ module.exports = {
         css: './src/style.css',
     },
     output: {
+        publicPath: '/assets/',
         path: path.resolve(__dirname, 'dist/assets/'),
         filename: '[name].bundle.js',
-        clean: true,
     },
     module: {
         rules: [

@@ -12,5 +12,7 @@ module.exports = merge(common, {
         liveReload: true,
         watchFiles: ['src/**/*', 'dist/**/*'],
         port: 3000,
+        open:true,
+        hot:true,
     },
 });
