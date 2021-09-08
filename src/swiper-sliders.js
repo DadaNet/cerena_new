@@ -8,13 +8,52 @@ import 'swiper/swiper.min.css';
 var swiperComment = new Swiper("#slider-comment .swiper-container", {
     loop: true,
     slidesPerView: 3,
-    spaceBetween: 20,
     initialSlide: 1,
     watchOverflow: true,
 
     navigation: {
         nextEl: "#slider-comment .swiper-button-next",
         prevEl: "#slider-comment .swiper-button-prev",
+    },
+
+});
+
+// SLIDER JEWELRY
+var swiperComment = new Swiper("#slider-comment-jewelry-one .swiper-container", {
+    loop: true,
+    slidesPerView: 3,
+    initialSlide: 1,
+    watchOverflow: true,
+
+    navigation: {
+        nextEl: "#slider-comment-jewelry-one .swiper-button-next",
+        prevEl: "#slider-comment-jewelry-one .swiper-button-prev",
+    },
+
+});
+
+var swiperComment = new Swiper("#slider-comment-jewelry-two .swiper-container", {
+    loop: true,
+    slidesPerView: 3,
+    initialSlide: 1,
+    watchOverflow: true,
+
+    navigation: {
+        nextEl: "#slider-comment-jewelry-two .swiper-button-next",
+        prevEl: "#slider-comment-jewelry-two .swiper-button-prev",
+    },
+
+});
+
+var swiperComment = new Swiper("#slider-comment-jewelry-three .swiper-container", {
+    loop: true,
+    slidesPerView: 3,
+    initialSlide: 1,
+    watchOverflow: true,
+
+    navigation: {
+        nextEl: "#slider-comment-jewelry-three .swiper-button-next",
+        prevEl: "#slider-comment-jewelry-three .swiper-button-prev",
     },
 
 });

@@ -369,10 +369,63 @@
     }
 
     .info-block-parent .info-text.active {
-        @apply max-h-80;
+        max-height: 2000px;
     }
 
     .info-block-parent .info-text p {
         @apply mb-4;
+    }
+
+    .comment-block {
+        @apply flex flex-wrap justify-between p-7 bg-gray-200 rounded;
+    }
+
+    .block-name-star,
+    .block-city-date{
+        @apply flex items-center justify-between mb-2 w-full;
+    }
+
+    .block-name-star div {
+        @apply flex items-center;
+    }
+
+    .comment-text {
+        @apply mb-5;
+    }
+
+    .my-answer {
+        @apply text-red mb-5;
+    }
+
+    .jewelry-item {
+        @apply block rounded border border-gray-light relative -top-1 bg-gray-light overflow-hidden transition hover:text-red hover:shadow-md;
+    }
+
+    .jewelry-item > img {
+        @apply rounded-t object-cover w-full h-48 transition transform hover:scale-105;
+    }
+
+    .jewelry-cont {
+        @apply px-5 py-6 bg-white;
+    }
+
+    .jewelry-date {
+        @apply text-gray flex items-center mb-5;
+    }
+
+    .jewelry-date > span {
+        @apply ml-2 text-sm;
+    }
+
+    .jewelry-name {
+        @apply text-2xl font-medium mb-1.5;
+    }
+
+    .jewelry-type {
+        @apply text-gray-dark;
+    }
+
+    .item-new-product {
+        @apply border border-gray-200 block mx-3;
     }
 }
