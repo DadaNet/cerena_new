@@ -1,6 +1,6 @@
-import Swiper, { Navigation, Thumbs } from 'swiper';
+import Swiper, { Navigation, Thumbs, Pagination } from 'swiper';
 
-Swiper.use([Navigation,Thumbs]);
+Swiper.use([Navigation,Thumbs,Pagination]);
 
 import 'swiper/swiper.min.css';
 
@@ -115,34 +115,24 @@ var swiperBig = new Swiper("#sliderBig", {
     },
 });
 
-var swiperTwo = new Swiper(".one-block-slider", {
+var swiperMain = new Swiper("#main-slider .swiper-container", {
     loop: true,
     slidesPerView: 1,
     spaceBetween: 20,
     initialSlide: 1,
 
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: "#main-slider .swiper-button-next",
+        prevEl: "#main-slider .swiper-button-prev",
     },
 });
-var swiperSmall1 = new Swiper(".block-slider-about", {
-    loop: true,
-    slidesPerView: 3,
-    initialSlide: 1,
-
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-});
-var swiperSmall2 = new Swiper(".main-block-slider", {
+var swiperMainBottom = new Swiper("#main-bottom-slider .swiper-container", {
     loop: true,
     slidesPerView: 1,
     spaceBetween: 20,
 
     pagination: {
-        el: '.swiper-pagination',
+        el: '#main-bottom-slider .swiper-pagination',
         clickable: true,
     },
 });

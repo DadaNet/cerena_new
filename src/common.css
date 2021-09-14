@@ -49,11 +49,11 @@
 
     /*  BUTTONS  */
     .btn-red {
-        @apply bg-red text-white py-2 px-6 rounded transition duration-300 hover:bg-red-light;
+        @apply block bg-red text-white text-center py-2 px-6 rounded transition hover:bg-red-light;
     }
 
     .btn-like {
-        @apply border border-gray rounded text-center flex items-center justify-center hover:border-red;
+        @apply border border-gray rounded text-center flex items-center justify-center transition hover:border-red;
     }
 
     .btn-like svg,
@@ -83,7 +83,7 @@
     }
 
     .btn-basket {
-        @apply flex items-center bg-red text-sm text-white relative rounded border border-red px-5 py-2 transition duration-300 hover:bg-red-light;
+        @apply flex items-center bg-red text-sm text-white relative rounded border border-red px-5 py-2 transition hover:bg-red-light;
     }
 
     .btn-basket svg {
@@ -91,23 +91,47 @@
     }
 
     .btn-del {
-        @apply border rounded border-black text-center flex items-center justify-center transition hover:bg-red-light;
+        @apply border rounded border-black text-center flex items-center justify-center transition hover:bg-gray-light hover:shadow;
+    }
+
+    .btn-buy {
+        @apply border border-black rounded text-center flex items-center justify-center transition hover:border-red hover:bg-gray-light hover:shadow;
+    }
+
+    .btn-buy svg {
+        @apply fill-current text-black;
+    }
+
+    .btn-buy:hover svg {
+        @apply text-red;
     }
 
 
     /*  ITEMS CATALOG  */
     .item-product {
-        @apply block border border-gray rounded relative text-center hover:rounded-b-none hover:border-b-0 mx-3;
+        @apply block relative text-center;
+    }
+
+    .item-product:hover img{
+        @apply scale-105;
+    }
+
+    .item-product__text {
+        @apply p-4 border border-t-0 border-gray-light rounded-b;
+    }
+
+    .item-product:hover .item-product__text {
+        @apply rounded-none;
+        border-bottom-color: transparent;
     }
 
     .item-product__info {
-        @apply text-left opacity-0 absolute bottom-0 left-0 transform -translate-x-px z-20 px-5 pb-5 bg-white border-r border-l border-gray rounded-b flex flex-col text-xs font-light;
+        @apply text-left text-xs font-light w-full h-0 overflow-hidden opacity-0 absolute top-full left-0 z-20 px-5 pb-5 bg-white border-r border-l border-gray-light rounded-b flex flex-col;
         border-bottom: 8px solid #C0384E;
-        width: calc(100% + 2px);
     }
 
     .item-product:hover .item-product__info {
-        @apply opacity-100 translate-y-full;
+        @apply opacity-100 translate-y-full h-auto;
     }
 
     .item-product-main {
@@ -120,7 +144,7 @@
     }
 
     .sizes label {
-        @apply bg-gray-light border border-gray-light rounded w-12 text-xs text-center px-2 py-1 mr-2 mb-2 cursor-pointer transition hover:shadow-md;
+        @apply bg-gray-light border border-gray-light rounded w-12 text-xs text-center px-2 py-1 mr-2 mb-2 cursor-pointer transition hover:shadow;
     }
 
     .sizes label.checked {
@@ -145,8 +169,11 @@
     }
 
     /* SIMPLE TEXT */
-    .text p {
+    .text p, .text li {
         @apply mb-6;
+    }
+    .text ul {
+       list-style: disc;
     }
 
     /* FOOTER */
@@ -181,10 +208,6 @@
         @apply hidden;
     }
 
-    .table-like, .table-del {
-        @apply mx-auto inline-block;
-    }
-
 
     /* Main */
     .one-block-slider img {
@@ -192,23 +215,15 @@
     }
 
     .item-category {
-        @apply flex justify-center items-end overflow-hidden text-center rounded h-72 mx-2 mb-5 font-medium text-2xl shadow-xl duration-300 relative;
-    }
-
-    .item-category.two-category {
-        @apply h-80;
+        @apply block overflow-hidden rounded h-72 font-medium text-2xl shadow-xl relative;
     }
 
     .item-category img {
-        @apply max-w-none w-full h-full object-cover;
-    }
-
-    .item-category:hover {
-        @apply text-white;
+        @apply w-full h-full object-cover transition hover:opacity-70;
     }
 
     .item-category span {
-        @apply absolute h-full w-full flex items-end justify-center pb-4 z-10 hover:bg-red-light duration-300 hover:bg-opacity-80	;
+        @apply block absolute top-56 left-0 z-10 w-full text-center px-3;
     }
 
     .about-block-map {
@@ -223,19 +238,6 @@
 
     .product-sidebar-item:hover img {
         @apply transition opacity-80;
-    }
-
-    .main-block-slider + .swiper-pagination {
-        @apply w-full flex items-center justify-center;
-    }
-
-    .main-block-slider + .swiper-pagination .swiper-pagination-bullet {
-        @apply w-5 h-5 border-gray mx-3 bg-transparent border opacity-100;
-    }
-
-    .main-block-slider + .swiper-pagination .swiper-pagination-bullet-active {
-        @apply w-5 h-5;
-        background: url("icons/Oval.png") no-repeat 3.5px 3.5px / 10px 10px;
     }
 
     /* ABOUT */
@@ -329,9 +331,7 @@
         @apply w-full h-full object-cover;
     }
 
-    .table-basket td:first-child {
-        @apply flex items-center;
-    }
+
 
     .price-table p {
         @apply text-sm text-left mb-3;
@@ -380,26 +380,6 @@
         @apply mb-4;
     }
 
-    .comment-block {
-        @apply flex flex-wrap justify-between p-7 bg-gray-200 rounded;
-    }
-
-    .block-name-star,
-    .block-city-date{
-        @apply flex items-center justify-between mb-2 w-full;
-    }
-
-    .block-name-star div {
-        @apply flex items-center;
-    }
-
-    .comment-text {
-        @apply mb-5;
-    }
-
-    .my-answer {
-        @apply text-red mb-5;
-    }
 
     .jewelry-item {
         @apply block rounded border border-gray-light relative -top-1 bg-gray-light overflow-hidden transition hover:text-red hover:shadow-md;
@@ -446,4 +426,17 @@
     #slider-comment .swiper-slide > div {
         @apply mx-3;
     }
+}
+
+.swiper-pagination {
+    @apply w-full flex items-center justify-center;
+}
+
+.swiper-pagination-bullet {
+    @apply block w-5 h-5 border rounded-full border-gray mx-3 relative cursor-pointer;
+}
+
+.swiper-pagination-bullet-active:before {
+    content: "";
+    @apply block w-2.5 h-2.5 bg-gray rounded-full absolute top-1 left-1;
 }

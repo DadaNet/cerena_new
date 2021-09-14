@@ -34,26 +34,19 @@
     <meta property="og:type" content="article"/>
     <meta property="og:url" content=""/>
 
-
-    <!-- slider -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-    <script src="../../plumbing/plumbing/js/main.js"></script>
-
-    <!-- style -->
-    <!--    <link rel="stylesheet" href="style/main.css">-->
 </head>
 <body class="font-sans font-base font-normal text-gray-dark">
 <nav class="bg-red">
     <div class="max-w-6xl mx-auto">
         <div class="hidden sm:flex sm:justify-between">
             <a href="#" class="text-white opacity-100 transition hover:opacity-100 py-4 text-sm" aria-current="page">Главная</a>
-            <a href="#" class="text-white opacity-70 transition hover:opacity-100 py-4 text-sm">О нас</a>
+            <a href="/about.html" class="text-white opacity-70 transition hover:opacity-100 py-4 text-sm">О нас</a>
             <a href="#" class="text-white opacity-70 transition hover:opacity-100 py-4 text-sm">Акции</a>
             <a href="#" class="text-white opacity-70 transition hover:opacity-100 py-4 text-sm">Доставка и оплата</a>
             <a href="#" class="text-white opacity-70 transition hover:opacity-100 py-4 text-sm">Гарантии</a>
             <a href="#" class="text-white opacity-70 transition hover:opacity-100 py-4 text-sm">Отзывы</a>
             <a href="#" class="text-white opacity-70 transition hover:opacity-100 py-4 text-sm">Оптовым покупателям</a>
-            <a href="#" class="text-white opacity-70 transition hover:opacity-100 py-4 text-sm">Контакты</a>
+            <a href="/contact.html" class="text-white opacity-70 transition hover:opacity-100 py-4 text-sm">Контакты</a>
             <a href="#" class="text-white opacity-70 transition hover:opacity-100 py-4 text-sm">Вход</a>
         </div>
     </div>
@@ -65,7 +58,7 @@
                 <input type="search"
                        class="w-full border rounded-sm border-gray py-2 px-3 text-sm leading-4 focus:outline-none focus:ring-2 focus:ring-gray focus:ring-opacity-30"
                        placeholder="Поиск...">
-                <button class="text-center text-sm border border-gray bg-gray rounded py-2 px-3 leading-4 transition hover:bg-opacity-80 absolute right-0">
+                <button class="text-center text-sm border border-gray-light bg-gray rounded py-2 px-3 leading-4 transition hover:bg-opacity-80 absolute right-0">
                     Найти
                 </button>
             </form>
@@ -87,7 +80,7 @@
             </a>
         </div>
         <div class="w-1/4 flex flex-col items-end">
-            <a href="#"
+            <a href="/basket-like.html"
                class="btn-like w-48 flex items-center active text-sm text-red px-5 py-2 mb-3 hover:border-red-light hover:text-red-light">
                 <svg class="mr-3" width="22" height="20" viewBox="0 0 22 20" xmlns="http://www.w3.org/2000/svg">
                     <path d="M20.0287 9.40894L20.0286 9.40883L20.0202 9.41793L11 19.26L1.97977 9.41793L1.9799 9.41782L1.97085 9.40844C1.06267 8.46794 0.5 7.16263 0.5 5.71468C0.5 4.26711 1.06242 2.9642 1.97131 2.02044L1.97179 2.01994C2.87739 1.07699 4.12377 0.5 5.5 0.500003L5.49997 0.5L5.4994 0.499998L5.49971 0.500001C5.5 0.500003 5.50048 0.500008 5.50116 0.500018L5.51612 0.50037C5.53108 0.50083 5.55591 0.501854 5.58995 0.504126C5.65804 0.508672 5.76287 0.518205 5.89923 0.538176C6.17201 0.578127 6.57033 0.659757 7.05291 0.826467C8.01598 1.15916 9.32127 1.83284 10.6398 3.20269L11 3.57696L11.3602 3.20269C12.6787 1.83284 13.984 1.15916 14.9471 0.826467C15.4297 0.659757 15.828 0.578127 16.1008 0.538176C16.2371 0.518205 16.342 0.508672 16.41 0.504126C16.4441 0.501854 16.4689 0.50083 16.4839 0.50037L16.4988 0.500018C16.4996 0.500008 16.5001 0.500003 16.5004 0.5C17.8759 0.5001 19.1225 1.07945 20.0287 2.02043L20.0287 2.02044C20.9375 2.96411 21.5 4.26976 21.5 5.71468C21.5 7.15941 20.9349 8.4679 20.0287 9.40894Z"/>
@@ -95,7 +88,7 @@
                 <span class="w-28">Отложено (<span>1000</span>)</span>
             </a>
             <div id="basketTop" class="relative">
-                <a href="#" class="btn-basket w-48">
+                <a href="/basket.html" class="btn-basket w-48">
                     <svg class="mr-3" width="23" height="23" viewBox="0 0 23 23" xmlns="http://www.w3.org/2000/svg">
                         <path d="M7.05148 0L2.78303 7.66352H1.15016C0.79139 7.66352 0.454467 7.83576 0.235985 8.12715C0.0186528 8.41973 -0.0537912 8.7996 0.0405012 9.15352L3.25909 21.2611C3.53047 22.2851 4.44349 23 5.47841 23H17.5214C18.554 23 19.467 22.2863 19.7407 21.2599L22.9593 9.15234C23.0536 8.79842 22.9823 8.41855 22.7638 8.12597C22.5442 7.83576 22.2073 7.66352 21.8485 7.66352H20.2156L15.9472 0L13.9509 1.17029L17.5674 7.66352H5.43126L9.04772 1.17029L7.05148 0ZM13.7991 12.3824H16.099V18.2811H13.7991V12.3824ZM6.8997 12.3824H9.19951V18.2811H6.8997V12.3824Z"/>
                     </svg>
@@ -103,12 +96,15 @@
                 </a>
 
                 <!--modal-->
-                <div id="basketModal" class="hidden absolute top-12 right-0 p-4 border-t-4 rounded border-red bg-white z-30 w-max shadow">
+                <div id="basketModal"
+                     class="hidden absolute top-12 right-0 p-4 border-t-4 rounded border-red bg-white z-30 w-max shadow">
                     <div class="flex items-center justify-between mb-2 border-b border-gray-light pb-4 mb-4">
-                        <img src="/img/img-01.jpg" alt="Кольцо «Венок»"
-                             class="w-16 h-16 rounded border border-gray-light object-cover">
+                        <a href="/str-product.html" class="block w-16 h-16 rounded border border-gray-light">
+                            <img src="/img/img-01.jpg" alt="Кольцо «Венок»"
+                                 class="w-full h-full rounded object-cover transition hover:opacity-80">
+                        </a>
                         <div class="mx-5 flex-shrink-0 w-1/2">
-                            <a href="#" class="block mb-1 transition hover:text-red">
+                            <a href="/str-product.html" class="block mb-1 transition hover:text-red">
                                 <p class="text-sm font-medium">Кольцо «Венок»</p>
                                 <p class="text-xs">с агатом, жемчугом и марказитами</p>
                             </a>
@@ -126,8 +122,10 @@
                         </div>
                     </div>
                     <div class="flex items-center justify-between mb-2 border-b border-gray-light pb-4 mb-4">
-                        <img src="/img/img-03.jpg" alt="Кольцо «Капель»"
-                             class="w-16 h-16 rounded border border-gray-light object-cover">
+                        <a href="/str-product.html" class="block w-16 h-16 rounded border border-gray-light">
+                            <img src="/img/img-03.jpg" alt="Кольцо «Капель»"
+                                 class="w-full h-full rounded object-cover transition hover:opacity-80">
+                        </a>
                         <div class="mx-5 flex-shrink-0 w-1/2">
                             <a href="#" class="block mb-1 transition hover:text-red">
                                 <p class="text-sm font-medium">Кольцо «Капель»</p>
@@ -180,65 +178,84 @@
         <p class="mx-1 text-red-700">/</p>
         <p class="">Оптовым покупателям</p>
     </div>
-    <div class="flex mb-20">
-       <div class="w-2/4 mr-7">
-           <p class="mb-5 text-red font-bold text-4xl">Оптовым покупателям</p>
-           <p class="font-bold mb-7">Серена-Сильвер уже 18 лет работает на рынке оптовой торговли серебряными украшениями из Индии и Таиланда.</p>
-           <p class="mb-6">• Мы работаем напрямую с лучшими поставщиками-производителями из Индии и Таиланда. Сами ездим на закупки, отбираем и привозим новые стильные коллекции. Вам понравятся наши цены.</p>
-           <p class="mb-6">• У нас очень интересный ассортимент, который пользуется повышенным спросом.</p>
-           <p class="mb-6">Мы будем рады сотрудничеству и нацелены на долгосрочные партнёрские отношения.</p>
+    <div class="text flex mb-20">
+        <div class="w-2/4 mr-7">
+            <h1 class="mb-5 text-red">Оптовым покупателям</h1>
+            <p><b>Серена-Сильвер уже 18 лет работает на рынке оптовой торговли серебряными украшениями из Индии и
+                Таиланда.</b></p>
+            <p>Мы работаем напрямую с лучшими поставщиками-производителями из Индии и Таиланда. Сами ездим на закупки,
+                отбираем и привозим новые стильные коллекции. Вам понравятся наши цены.</p>
+            <p>У нас очень интересный ассортимент, который пользуется повышенным спросом.</p>
+            <p>Мы будем рады сотрудничеству и нацелены на долгосрочные партнёрские отношения.</p>
 
-           <p class="text-red text-xl mb-5 font-bold">Наши оптовые покупатели получают:</p>
+            <h2 class="text-red mb-5 font-bold">Наши оптовые покупатели получают:</h2>
+            <ul>
+                <li><b>Привлекательные оптовые цены</b> — существенная скидка от розничных цен на сайте
+                    (регистрируйтесь и убедитесь сами!).</li>
+                <li>Безопасная и быстрая доставка во все регионы России. Доставка осуществляется специальной
+                    почтовой службой. <b>Бесплатно.</b></li>
+                <li>Первая партия на отборку — <b>возможность 100% обмена или возврата</b> (за вычетом
+                    банковских комиссий и расходов на доставку).</li>
+                <li>В течение целых <b>6 месяцев можно обменять до 30% изделий</b> из каждой закупленной
+                    партии на другие модели в наличии.</li>
+                <li><b>Программа лояльности</b> для постоянных покупателей. Отсрочка оплаты на месяц,
+                    накопительные скидки, бесплатный обмен изделий.</li>
+                <li><b>Персональный менеджер</b>, который помнит ваши потребности, делает предварительные
+                    заказы и заранее оповещает обо всех новинках и интересных предложениях.</li>
+            </ul>
+            <h2 class="text-red mb-3">Ассортимент</h2>
+            <p>На нашем складе ассортимент намного шире представленного на сайте. Наши менеджеры с радостью
+                подберут изделия согласно Вашим пожеланиям!</p>
+            <h2 class="text-red mb-3">Контакты</h2>
+            <p>Всю необходимую информацию можно получить, отправив письмо на электронную почту <a
+                    href="mailto:info@cerena-silver.ru" class="font-bold"><span class="text-red">info@cerena-silver.ru</span> с пометкой «Опт».</a>
+                Просим Вас указывать полную информацию о себе — название компании, контактную информацию – телефон и
+                почту, а также интересующую информацию.</p>
+        </div>
+        <div class="w-2/4">
+            <form action="#" class="border rounded mb-10">
+                <h2 class="bg-red text-white font-bold text-center block py-3">Уже зарегистрированы?</h2>
+                <p class="text-center my-5 mx-10">Если Вы уже зарегистированы, войдите в систему, чтобы видеть
+                    оптовые цены</p>
+                <div class="flex flex-col px-7">
+                    <input type="email" class="w-full border rounded mb-5 py-3 px-4" placeholder="E-mail">
+                    <input type="password" class="w-full border rounded mb-5 py-3 px-4" placeholder="******">
 
-           <p class="mb-6"><b>• Привлекательные оптовые цены</b> — существенная скидка от розничных цен на сайте (регистрируйтесь и убедитесь сами!).</p>
-           <p class="mb-6">• Безопасная и быстрая доставка во все регионы России. Доставка осуществляется специальной почтовой службой. <b>Бесплатно.</b></p>
-           <p class="mb-6">• Первая партия на отборку — <b>возможность 100% обмена или возврата</b> (за вычетом банковских комиссий и расходов на доставку).</p>
-           <p class="mb-6">• В течение целых <b>6 месяцев можно обменять до 30% изделий</b> из каждой закупленной партии на другие модели в наличии.</p>
-           <p class="mb-6"><b>• Программа лояльности</b> для постоянных покупателей. Отсрочка оплаты на месяц, накопительные скидки, бесплатный обмен изделий.</p>
-           <p class="mb-6"><b>• Персональный менеджер</b>, который помнит ваши потребности, делает предварительные заказы и заранее оповещает обо всех новинках и интересных предложениях.</p>
+                    <button class="w-full text-center bg-red text-white font-medium py-3 rounded mb-7 transition hover:bg-red-light">
+                        Войти
+                    </button>
 
-           <p class="text-red font-bold">Ассортимент</p>
-           <p class="mb-6">На нашем складе ассортимент намного шире представленного на сайте. Наши менеджеры с радостью подберут изделия согласно Вашим пожеланиям!</p>
-           <p class="text-red font-bold">Контакты</p>
-           <p class="">Всю необходимую информацию можно получить, отправив письмо на электронную почту <a href="info@cerena-silver.ru" class="font-bold">info@cerena-silver.ru с пометкой «Опт».</a>
-               Просим Вас указывать полную информацию о себе — название компании, контактную информацию – телефон и почту, а также интересующую информацию.</p>
-       </div>
-       <div class="w-2/4">
-           <form action="#" class="border rounded overflow-hidden mb-10">
-               <p class="bg-red text-white font-bold text-center w-full py-3 text-xl">Уже зарегистрированы?</p>
-               <p class="text-center mb-5 mt-5 px-10">Если Вы уже зарегистированы, войдите в систему, чтобы видеть оптовые цены</p>
-               <div class="flex flex-col px-7">
-                   <input type="email" class="w-full border rounded mb-5 h-12 py-3 px-4" placeholder="E-mail">
-                   <input type="password" class="w-full border rounded mb-5 h-12 py-3 px-4" placeholder="******">
+                    <div class="flex items-center justify-between mb-5">
+                        <label class="flex items-center text-sm">
+                            <input type="checkbox" class="w-6 h-6 mr-2">
+                            Запомнить меня
+                        </label>
+                        <a href="#" class="text-sm text-red">Забыли свой пароль?</a>
+                    </div>
+                </div>
+            </form>
 
-                   <button class="w-full h-12 text-center bg-red text-white font-medium block py-3 rounded mb-7">Войти</button>
+            <form action="#" class="border rounded overflow-hidden">
+                <h2 class="bg-red text-white font-bold text-center block py-3">Зарегистрироваться</h2>
+                <p class="text-center my-5 px-10">Только для юридических лиц и ИП</p>
+                <div class="flex flex-col px-7">
+                    <input type="text" class="w-full border rounded mb-4 h-12 py-3 px-4" placeholder="Ф.И.О.*">
+                    <input type="tel" class="w-full border rounded mb-4 h-12 py-3 px-4" placeholder="Телефон*">
+                    <input type="email" class="w-full border rounded mb-4 h-12 py-3 px-4" placeholder="E-mail">
+                    <input type="text" class="w-full border rounded mb-4 h-12 py-3 px-4"
+                           placeholder="Название компании или ИП">
+                    <input type="text" class="w-full border rounded mb-4 h-12 py-3 px-4"
+                           placeholder="Город или населенный пункт">
+                    <input type="password" class="w-full border rounded mb-4 h-12 py-3 px-4" placeholder="Пароль*">
+                    <input type="password" class="w-full border rounded mb-4 h-12 py-3 px-4"
+                           placeholder="Повторить пароль*">
 
-                   <div class="flex items-center justify-between mb-5">
-                       <label class="flex items-center text-sm">
-                           <input type="checkbox" class="w-6 h-6 mr-2">
-                           Запомнить меня
-                       </label>
-                       <a href="#" class="text-sm text-red">Забыли свой пароль?</a>
-                   </div>
-               </div>
-           </form>
-
-           <form action="#" class="border rounded overflow-hidden">
-               <p class="bg-red text-white font-bold text-center w-full py-3 text-xl">Зарегистрироваться</p>
-               <p class="text-center mb-5 mt-5 px-10">Только для юридических лиц и ИП</p>
-               <div class="flex flex-col px-7">
-                   <input type="text" class="w-full border rounded mb-4 h-12 py-3 px-4" placeholder="Ф.И.О.*">
-                   <input type="tel" class="w-full border rounded mb-4 h-12 py-3 px-4" placeholder="Телефон*">
-                   <input type="email" class="w-full border rounded mb-4 h-12 py-3 px-4" placeholder="E-mail">
-                   <input type="text" class="w-full border rounded mb-4 h-12 py-3 px-4" placeholder="Название компании или ИП">
-                   <input type="text" class="w-full border rounded mb-4 h-12 py-3 px-4" placeholder="Город или населенный пункт">
-                   <input type="password" class="w-full border rounded mb-4 h-12 py-3 px-4" placeholder="Пароль*">
-                   <input type="password" class="w-full border rounded mb-4 h-12 py-3 px-4" placeholder="Повторить пароль*">
-
-                   <button class="w-full h-12 text-center bg-red text-white font-medium block py-3 rounded mb-7">Регистрация</button>
-               </div>
-           </form>
-       </div>
+                    <button class="w-full text-center bg-red text-white font-medium py-3 rounded mb-7 transition hover:bg-red-light">
+                        Регистрация
+                    </button>
+                </div>
+            </form>
+        </div>
     </div>
 
     <p class="font-medium text-center mb-20 text-4xl">Будем рады сотрудничеству! Ждём ваших писем!</p>
