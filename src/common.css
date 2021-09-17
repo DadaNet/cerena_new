@@ -463,6 +463,40 @@
     .price-table tr:nth-child(5) td:nth-child(4) {
         background: rgba(187, 187, 187, .5);
     }
+
+    .item-product .text-class {
+        transform: scale(1);
+        transition: all 1s;
+        @apply absolute top-0 left-0 w-full;
+    }
+
+    .item-product:hover .text-class {
+        transform: scale(0);
+        margin: 0;
+        margin-top: -50px;
+    }
+
+    .item-product .btn {
+        transform: scale(0);
+        transition: all 1s;
+        @apply py-2 px-5 bg-red text-white rounded;
+    }
+
+    .item-product:hover .btn {
+        transform: scale(1);
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    .item-product__text {
+        @apply relative pt-12;
+        transition: all 1s;
+        min-height: 150px;
+    }
+
+    .item-product:hover .item-product__text {
+        @apply  pt-0;
+    }
 }
 
 .swiper-pagination {
