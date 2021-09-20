@@ -4,7 +4,7 @@ Swiper.use([Navigation,Thumbs,Pagination]);
 
 import 'swiper/swiper.min.css';
 
-// SLIDER Product
+// SLIDER Product recent
 var swiperProduct = new Swiper("#slider-product .swiper-container", {
     loop: false,
     slidesPerView: 3,
@@ -85,42 +85,32 @@ var swiperComment = new Swiper("#slider-comment .swiper-container", {
 
 });
 
-// SLIDER JEWELRY
-var swiperComment = new Swiper("#slider-comment-jewelry-one .swiper-container", {
+// SLIDER NEW JEWELRY
+var swiperNew = new Swiper("#slider-new .swiper-container", {
     loop: true,
     slidesPerView: 3,
+    spaceBetween: 20,
     initialSlide: 1,
     watchOverflow: true,
 
     navigation: {
-        nextEl: "#slider-comment-jewelry-one .swiper-button-next",
-        prevEl: "#slider-comment-jewelry-one .swiper-button-prev",
+        nextEl: "#slider-new .swiper-button-next",
+        prevEl: "#slider-new .swiper-button-prev",
     },
 
 });
 
-var swiperComment = new Swiper("#slider-comment-jewelry-two .swiper-container", {
+// SLIDER DISCOUNT JEWELRY
+var swiperComment = new Swiper("#slider-discount .swiper-container", {
     loop: true,
     slidesPerView: 3,
+    spaceBetween: 20,
     initialSlide: 1,
     watchOverflow: true,
 
     navigation: {
-        nextEl: "#slider-comment-jewelry-two .swiper-button-next",
-        prevEl: "#slider-comment-jewelry-two .swiper-button-prev",
-    },
-
-});
-
-var swiperComment = new Swiper("#slider-comment-jewelry-three .swiper-container", {
-    loop: true,
-    slidesPerView: 3,
-    initialSlide: 1,
-    watchOverflow: true,
-
-    navigation: {
-        nextEl: "#slider-comment-jewelry-three .swiper-button-next",
-        prevEl: "#slider-comment-jewelry-three .swiper-button-prev",
+        nextEl: "#slider-discount .swiper-button-next",
+        prevEl: "#slider-discount .swiper-button-prev",
     },
 
 });

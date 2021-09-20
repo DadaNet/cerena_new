@@ -173,7 +173,7 @@
         @apply mb-6;
     }
     .text ul {
-       list-style: disc;
+        @apply pl-5 list-disc;
     }
 
     /* FOOTER */
@@ -438,31 +438,6 @@
     .contact-soc a:hover span {
         @apply bg-red-light;
     }
-    
-    .name-col {
-        background: #C9C9C9;
-    }
-
-    .name-col th:nth-child(2),
-    .name-col th:nth-child(4) {
-        background: rgba(187, 187, 187, .5);
-    }
-
-    .item-col {
-        background: #F2F2F2;
-    }
-
-    .price-table td:nth-child(2),
-    .price-table td:nth-child(4) {
-        background: #F2F2F2;
-    }
-
-    .price-table tr:nth-child(3) td:nth-child(2),
-    .price-table tr:nth-child(3) td:nth-child(4),
-    .price-table tr:nth-child(5) td:nth-child(2),
-    .price-table tr:nth-child(5) td:nth-child(4) {
-        background: rgba(187, 187, 187, .5);
-    }
 
     .item-product .text-class {
         transform: scale(1);
@@ -492,10 +467,6 @@
         @apply relative pt-12;
         transition: all 1s;
         min-height: 150px;
-    }
-
-    .item-product:hover .item-product__text {
-        @apply  pt-0;
     }
 }
 
