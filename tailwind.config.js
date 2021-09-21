@@ -26,6 +26,9 @@ module.exports = {
           dark: '#5687B8',
         }
       },
+      borderWidth: {
+        '6': '6px',
+      },
     },
   },
 

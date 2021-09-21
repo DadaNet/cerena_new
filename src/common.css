@@ -109,15 +109,15 @@
 
     /*  ITEMS CATALOG  */
     .item-product {
-        @apply block relative text-center;
+        @apply block relative text-center hover:shadow-md;
     }
 
-    .item-product:hover img{
+    .item-product:hover img {
         @apply scale-105;
     }
 
     .item-product__text {
-        @apply p-4 border border-t-0 border-gray-light rounded-b;
+        @apply p-4 border border-t-0 border-gray-light rounded-b-lg;
     }
 
     .item-product:hover .item-product__text {
@@ -126,8 +126,8 @@
     }
 
     .item-product__info {
-        @apply text-left text-xs font-light w-full h-0 overflow-hidden opacity-0 absolute top-full left-0 z-20 px-5 pb-5 bg-white border-r border-l border-gray-light rounded-b flex flex-col;
-        border-bottom: 8px solid #C0384E;
+        @apply text-left text-xs font-light w-full h-0 overflow-hidden opacity-0 absolute top-full left-0 z-20 px-5 pb-5 bg-white border-r border-l border-b-6 border-gray-light rounded-b-lg flex flex-col shadow-md;
+        border-bottom-color: #C0384E;
     }
 
     .item-product:hover .item-product__info {
@@ -137,6 +137,15 @@
     .item-product-main {
         @apply border border-gray mb-6 rounded relative text-center border-b-4 duration-300 hover:border-red hover:shadow-xl;
     }
+    .item-product .text-class {
+        transform: scale(1);
+        transition: all 1s;
+        @apply absolute top-0 left-0 w-full;
+    }
+
+    .item-product:hover .btn-red {
+        @apply opacity-100;
+    }
 
     /* SIZES LABELS */
     .sizes {
@@ -144,7 +153,7 @@
     }
 
     .sizes label {
-        @apply bg-gray-light border border-gray-light rounded w-12 text-xs text-center px-2 py-1 mr-2 mb-2 cursor-pointer transition hover:shadow;
+        @apply bg-gray-light border border-gray-light rounded w-12 text-xs text-center px-2 py-1 cursor-pointer transition hover:shadow;
     }
 
     .sizes label.checked {
@@ -196,7 +205,7 @@
     }
 
     .swiper-slide .item-product {
-        @apply transition hover:rounded-b hover:border-b hover:shadow-md hover:border-red;
+        @apply transition hover:rounded-b-lg hover:border-b-6 hover:border-red;
     }
 
     .swiper-button-disabled {
@@ -210,10 +219,6 @@
 
 
     /* Main */
-    .one-block-slider img {
-        @apply object-cover w-full h-full;
-    }
-
     .item-category {
         @apply block overflow-hidden rounded h-72 font-medium text-2xl shadow-xl relative;
     }
@@ -291,15 +296,6 @@
         @apply items-center p-4;
     }
 
-
-    .col-number {
-        @apply h-7 mx-5 flex items-center;
-    }
-
-    .table-col-price {
-        @apply justify-center;
-    }
-
     /*  CHECK INPUT  */
     input[type="radio"] {
         @apply absolute left-0 w-0 h-0 opacity-0;
@@ -325,28 +321,6 @@
 
     input[type="radio"]:checked + label:after {
         @apply opacity-100;
-    }
-
-    .main-block-slider img {
-        @apply w-full h-full object-cover;
-    }
-
-
-
-    .price-table p {
-        @apply text-sm text-left font-light mb-3;
-    }
-
-    .price-table p b {
-        @apply font-bold;
-    }
-
-    .price-table th {
-        @apply text-white text-left font-medium text-lg;
-    }
-
-    .price-table img {
-        @apply mr-7;
     }
 
     /* ACCORDEON BLOCK */
@@ -384,58 +358,22 @@
         @apply mb-4;
     }
 
+    /*   SOCIAL LINKS  */
 
-    .jewelry-item {
-        @apply block rounded border border-gray-light relative -top-1 bg-gray-light overflow-hidden transition hover:text-red hover:shadow-md;
-    }
-
-    .jewelry-item > img {
-        @apply rounded-t object-cover w-full h-48 transition transform hover:scale-105;
-    }
-
-    .jewelry-cont {
-        @apply px-5 py-6 bg-white;
-    }
-
-    .jewelry-date {
-        @apply text-gray flex items-center mb-5;
-    }
-
-    .jewelry-date > span {
-        @apply ml-2 text-sm;
-    }
-
-    .jewelry-name {
-        @apply text-2xl font-medium mb-1.5;
-    }
-
-    .jewelry-type {
-        @apply text-gray-dark;
-    }
-
-    .item-new-product {
-        @apply border border-gray-200 block mx-3;
-    }
-
-    .contact-link:hover path,
-    .contact-link-two:hover path {
+    .contact-link:hover svg{
         fill: #C0384E;
         stroke: #C0384E;
     }
-    .contact-link-two:first-child:hover path:nth-child(3),
-    .contact-link-two:hover path:last-child {
-        fill: #fff;
+
+    .contact-soc {
+        @apply flex text-xl items-center mr-5 mb-6 transition hover:text-red;
     }
 
-    #slider-comment .swiper-slide > div {
-        @apply mx-3;
+    .contact-soc svg {
+        @apply fill-current text-white bg-red transition rounded mr-3;
     }
 
-    .contact-soc a span {
-        @apply block bg-red transition rounded mr-3;
-    }
-
-    .contact-soc a:hover span {
+    .contact-soc:hover svg {
         @apply bg-red-light;
     }
 
@@ -467,10 +405,6 @@
         @apply relative pt-12;
         transition: all 1s;
         min-height: 150px;
-    }
-
-    .item-product:hover .btn-basket {
-        @apply opacity-100;
     }
 }
 
