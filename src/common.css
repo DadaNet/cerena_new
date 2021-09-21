@@ -468,6 +468,10 @@
         transition: all 1s;
         min-height: 150px;
     }
+
+    .item-product:hover .btn-basket {
+        @apply opacity-100;
+    }
 }
 
 .swiper-pagination {

@@ -77,6 +77,7 @@ var swiperComment = new Swiper("#slider-comment .swiper-container", {
     slidesPerView: 3,
     initialSlide: 1,
     watchOverflow: true,
+    spaceBetween: 20,
 
     navigation: {
         nextEl: "#slider-comment .swiper-button-next",
