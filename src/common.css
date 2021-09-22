@@ -406,6 +406,13 @@
         transition: all 1s;
         min-height: 150px;
     }
+
+    .select-sort {
+        background: url("icons/select-arrow.svg") no-repeat 95% center;
+    }
+    .select-col {
+        background: url("icons/select-arrow.svg") no-repeat 90% center;
+    }
 }
 
 .swiper-pagination {
